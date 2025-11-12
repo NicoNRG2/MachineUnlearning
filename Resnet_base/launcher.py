@@ -4,7 +4,7 @@ import glob
 import time
 import shutil
 
-nome = 'nicola.cappellaro'
+nome = 'riccardo.zannoni' #change name
 
 # smi vampire function, busy waiting for a free-enough GPU, use min_vram to set the threshold
 def get_gpus():
@@ -74,20 +74,20 @@ save_scores = True
 phases = ['train', 'test']
 #phases = ['test']
 
-# augmentation
-resize_prob = 0.2 # probability of the randomresizecrop
-resize_size = 512 # output size of the randomresizecrop
-resize_scale = [0.2, 1.0] # range of the scaling factor
-resize_ratio = [0.75, 1/0.75] # range of the aspect ratio
+# --- augmentation disattivate ---
+resize_prob = 0.0        # disattiva random resize crop
+resize_size = 512         # mantieni comunque la dimensione finale
+resize_scale = [1.0, 1.0] # nessuna variazione di scala
+resize_ratio = [1.0, 1.0] # nessuna variazione di aspect ratio
 
-jpeg_prob = 0.2 # probability of the jpeg compression
-jpeg_qual = [30, 100] # range of the jpeg quality
+jpeg_prob = 0.0           # disattiva compressione JPEG random
+jpeg_qual = [100, 100]    # qualità costante
 
-blur_prob =  0.2 # probability of the gaussian blur
-blur_sigma = [1e-6, 3] # range of the sigma of the gaussian blur
+blur_prob = 0.0           # disattiva blur
+blur_sigma = [0.0, 0.0]   # nessun effetto blur
 
-# crop AFTER the augmentation
-patch_size = 96 # size of the crop after the augmentation
+# nessun crop dopo augmentazione
+patch_size = 0
 
 # training settings
 training_epochs = 10

@@ -1,5 +1,13 @@
 # Istruzioni per avviare e gestire l'ambiente
 
+## Scarica anaconda 
+```
+https://www.anaconda.com/docs/getting-started/miniconda/install
+```
+## Scarica TrueFace
+```
+conda env create -f /percorso/file/environment.yml
+```
 ## Avvia l'ambiente miniconda
 ```
 source miniconda3/bin/activate
