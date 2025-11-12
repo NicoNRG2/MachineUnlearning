@@ -114,7 +114,7 @@ def get_transform(settings, dataset):
             transform.append(
                 transforms.v2.RandomCrop(settings.patch_size, pad_if_needed=True)
             )
-    if settings.task == 'test' or settings.task == 'unlearn':
+    if settings.task == 'test':
         transform.append(
             transforms.v2.CenterCrop([settings.resize_size])
         )

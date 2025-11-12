@@ -61,8 +61,7 @@ best_accuracy = 0
 best_epoch = 0
 current_epoch = 0
 
-# optimizer = optim.Adam(model.parameters(), lr=settings.lr)
-optimizer = optim.SGD(model.parameters(), lr=settings.lr, momentum=0.9)
+optimizer = optim.Adam(model.parameters(), lr=settings.lr)
 criterion = nn.BCEWithLogitsLoss()
 
 if not settings.load_id is None:
@@ -93,7 +92,6 @@ def check_accuracy(loader, model):
                 label = label.to(device)
 
                 scores = model(data)
-                loss = criterion(scores, label)
 
                 if type(scores) == tuple:
                     _, scores = scores

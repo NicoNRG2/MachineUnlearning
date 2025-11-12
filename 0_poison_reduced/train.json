@@ -1,0 +1,6402 @@
+[
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/29176",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/02489",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/06470",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/25926",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/39125",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/66961",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/05348",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/10957",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/09001",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/13748",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/61517",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/00746",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/14752",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/19546",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/10549",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/57546",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/64189",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/31405",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/41248",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/41064",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/02474",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/52881",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/34409",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/00873",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/67135",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/58676",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/16947",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/57869",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/56934",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/01627",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/07165",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/14275",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/26365",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/14121",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/30651",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/39667",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/13602",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/39297",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/05120",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/10691",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/66341",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/11039",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/25699",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/86616",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/24185",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/66856",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/09067",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/03075",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/20153",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/08392",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/09459",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/26135",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/25628",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/30713",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/29920",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/29262",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/30707",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/05678",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/08533",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/35297",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/34739",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/02761",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/01302",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/01507",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/42923",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/30811",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/00604",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/08878",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/19192",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/20266",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/09971",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/02472",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/66071",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/24281",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/39696",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/01870",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/69310",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/17116",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/46062",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/53207",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/85651",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/10823",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/08621",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/12485",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/00429",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/07328",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/25698",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/62498",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/19772",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/09403",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/77871",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/19122",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/87756",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/24418",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/02053",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/49945",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/06348",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/01709",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/03626",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/00949",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/44931",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/18273",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/12673",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/33542",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/63691",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/23894",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/19471",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/63841",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/07558",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/68815",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/28781",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/01783",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/43758",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/52323",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/07703",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/18653",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/18586",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/59561",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/11515",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/01049",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/74341",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/02024",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/85481",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/06399",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/animals/04888",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/14464",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/03876",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/66596",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/10386",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/00252",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/32851",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/55146",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/46107",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/24136",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/08656",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/30278",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/12230",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/24128",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/32756",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/02934",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/11512",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/13660",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/07380",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/04864",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/01239",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/20475",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/24928",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/64266",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/13986",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/08861",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/14576",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/09925",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/04216",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/00312",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/38409",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/15537",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/63050",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/61351",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/54487",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/06434",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/11894",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/05521",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/17905",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/01880",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/64471",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/animals/06802",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/08032",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/06029",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/12454",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/04560",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/14980",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/09361",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/46456",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/24132",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/15567",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/19800",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/08834",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/18643",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/19356",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/64398",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/04716",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/43594",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/56476",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/10695",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/42666",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/13123",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/37264",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/55567",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/87491",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/38966",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/05509",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/00266",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/01774",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/07194",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/08353",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/29606",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/11771",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/32848",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/11036",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/03160",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/26803",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/03382",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/43297",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/01229",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/67915",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/31626",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/61892",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/40375",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/05668",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/05378",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/animals/08425",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/02395",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/01952",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/15814",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/38948",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/57465",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/04923",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/56454",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/62092",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/38402",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/25560",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/00775",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/19275",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/88701",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/04560",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/33706",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/16276",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/05380",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/18648",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/03736",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/11741",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/35609",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/68803",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/11505",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/59568",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/45966",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/24932",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/04957",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/67966",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/35418",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/01733",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/66362",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/01003",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/40572",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/30554",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/06872",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/14842",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/00423",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/25961",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/56010",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/28399",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/02635",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/39686",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/19064",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/02866",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/67122",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/14765",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/66860",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/55937",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/78311",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/30223",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/69857",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/14138",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/17548",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/57278",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/01254",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/19516",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/00899",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/12162",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/07426",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/15221",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/05107",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/05198",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/20040",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/41966",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/07412",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/33571",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/59272",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/09160",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/07611",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/00344",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/50503",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/10733",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/14579",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/16596",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/32709",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/04185",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/09888",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/01450",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/18085",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/16646",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/animals/02782",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/04497",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/39980",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/03965",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/18946",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/13436",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/03566",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/81716",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/03910",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/06146",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/64511",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/57978",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/51270",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/14848",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/01532",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/03002",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/87391",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/74256",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/28303",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/07140",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/41132",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/06547",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/87326",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/19389",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/52934",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/14663",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/47353",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/03398",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/09473",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/14925",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/07787",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/11073",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/01668",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/30548",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/12759",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/14334",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/35739",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/02722",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/01012",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/04638",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/45075",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/52590",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/08793",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/56033",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/37173",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/18969",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/03990",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/60171",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/19394",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/13587",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/41336",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/19842",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/04438",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/09950",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/15204",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/05931",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/09856",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/12216",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/25741",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/11561",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/14041",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/11635",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/04777",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/68910",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/53739",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/00135",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/07173",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/06661",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/05249",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/56446",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/25761",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/59511",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/35109",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/02751",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/77251",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/05842",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/06416",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/64041",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/16544",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/14757",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/24249",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/58327",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/32235",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/08099",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/02733",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/73411",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/05195",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/56211",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/00063",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/01563",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/21696",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/01194",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/22056",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/04886",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/51756",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/51279",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/09331",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/02119",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/08046",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/05919",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/33643",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/18414",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/00865",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/55000",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/49021",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/05980",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/08011",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/19528",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/01032",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/48121",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/01645",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/00092",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/34018",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/30999",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/14367",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/01335",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/09794",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/45141",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/03232",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/05896",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/59598",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/03763",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/40484",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/05446",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/76926",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/17851",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/09914",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/64657",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/06482",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/06207",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/08114",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/12019",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/70991",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/45296",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/17411",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/03445",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/05312",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/05121",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/16635",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/23353",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/08797",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/60654",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/05651",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/64251",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/69906",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/27599",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/18510",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/09937",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/09011",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/01957",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/12974",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/20031",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/09309",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/09473",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/16312",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/54234",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/09827",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/15041",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/09833",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/28795",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/01528",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/07391",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/65675",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/60774",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/20153",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/01134",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/02240",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/11424",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/00460",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/09471",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/34315",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/18126",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/01836",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/06705",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/22837",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/05994",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/59701",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/09783",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/05113",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/07890",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/01775",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/01929",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/37216",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/43388",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/00730",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/09458",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/02232",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/12519",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/60056",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/18204",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/18071",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/animals/08915",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/30768",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/00929",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/07803",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/58023",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/08638",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/16990",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/67658",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/14428",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/00491",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/08483",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/56113",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/43801",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/02881",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/58347",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/03270",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/15521",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/65455",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/03837",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/09008",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/06885",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/35251",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/68985",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/09544",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/45832",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/01034",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/09038",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/03295",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/25736",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/44711",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/42635",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/11091",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/00398",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/06190",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/03946",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/02151",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/32185",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/00973",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/23408",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/26801",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/27426",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/49545",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/03782",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/19206",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/07610",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/09515",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/21954",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/01971",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/animals/08970",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/26579",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/66071",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/03544",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/05157",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/03032",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/54908",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/56366",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/62025",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/07115",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/09703",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/18006",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/28315",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/17005",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/63681",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/33308",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/07136",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/65899",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/14999",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/17200",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/02216",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/02375",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/08381",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/03227",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/04987",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/05147",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/64808",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/09025",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/82066",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/18654",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/04698",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/47352",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/03273",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/02679",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/60571",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/animals/08057",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/07390",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/03127",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/27469",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/01865",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/19277",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/53801",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/46011",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/06796",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/01724",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/62491",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/01094",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/08416",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/65966",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/16407",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/58771",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/63950",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/01856",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/00389",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/19671",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/25555",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/03481",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/00635",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/25883",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/80421",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/03237",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/06121",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/animals/09078",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/26538",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/06632",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/88461",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/03844",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/14894",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/08334",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/61211",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/59003",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/04401",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/09605",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/08736",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/02088",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/34687",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/66404",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/05353",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/07193",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/09726",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/11185",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/26088",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/04642",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/02401",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/05812",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/35628",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/36032",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/20582",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/10099",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/17646",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/24925",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/18905",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/06320",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/09870",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/06240",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/02195",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/animals/06943",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/27905",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/20890",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/18079",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/11607",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/12514",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/17381",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/66241",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/01004",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/17654",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/60292",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/06202",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/04486",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/33072",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/41833",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/04964",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/06905",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/42566",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/15292",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/57846",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/34186",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/02399",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/15700",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/39225",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/08602",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/04585",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/07052",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/00049",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/09465",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/02286",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/01655",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/07378",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/00088",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/25483",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/50271",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/25038",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/06891",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/07129",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/41548",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/62213",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/49886",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/06825",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/59718",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/59861",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/33637",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/18307",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/43071",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/32705",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/31251",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/44356",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/71301",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/67454",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/25206",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/25025",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/08683",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/05489",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/05230",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/22818",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/12168",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/12576",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/37924",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/78761",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/15148",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/08618",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/16569",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/17081",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/58421",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/62959",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/03205",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/80306",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/animals/04161",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/24821",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/05443",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/36061",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/animals/05518",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/00061",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/74916",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/16660",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/animals/04108",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/11769",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/08351",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/41746",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/04027",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/24727",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/66924",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/01974",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/64451",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/64544",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/17734",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/21958",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/04609",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/22758",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/11571",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/16161",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/14550",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/18179",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/22783",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/17186",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/15718",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/68453",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/18225",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/02628",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/52692",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/03231",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/02019",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/51709",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/26355",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/05553",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/44585",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/07922",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/01314",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/animals/07886",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/02872",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/02301",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/07478",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/03363",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/30802",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/43240",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/09309",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/23759",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/19679",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/09390",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/12987",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/27090",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/79731",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/26040",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/05682",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/53956",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/14159",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/62065",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/07782",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/15395",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/85631",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/01261",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/05677",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/01922",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/animals/03622",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/11475",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/01327",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/00111",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/09327",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/18630",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/12755",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/20025",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/69511",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/40956",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/00360",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/03836",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/animals/00202",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/21603",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/03010",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/25525",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/00510",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/09466",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/78786",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/59701",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/01539",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/00578",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/07207",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/54793",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/08141",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/65733",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/13461",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/67120",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/07670",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/12132",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/16595",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/00456",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/29766",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/05073",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/15301",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/20038",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/00164",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/01446",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/44501",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/12025",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/07511",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/12387",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/11891",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/01651",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/69911",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/00437",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/10544",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/01727",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/53083",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/80871",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/02633",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/08980",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/42484",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/66005",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/62581",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/42620",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/02600",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/38091",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/06996",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/47940",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/21532",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/00736",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/49526",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/20491",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/53361",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/00256",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/10065",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/01220",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/20437",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/18848",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/09550",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/04268",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/21779",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/51299",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/11977",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/19839",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/07996",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/06501",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/40685",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/62936",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/12900",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/02221",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/58611",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/54433",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/19017",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/54631",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/49786",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/64382",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/15622",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/30833",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/24071",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/54098",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/05504",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/06536",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/01113",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/68505",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/04303",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/37647",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/06358",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/18871",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/48476",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/17406",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/09075",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/59257",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/68076",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/39010",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/35321",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/17363",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/52351",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/27231",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/65348",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/04069",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/67204",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/19005",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/09484",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/11371",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/16048",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/32754",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/00669",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/05728",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/77906",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/13433",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/00967",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/04258",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/00760",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/45784",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/26236",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/57449",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/01929",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/10738",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/78181",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/06681",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/69925",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/15678",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/11820",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/18451",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/04926",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/09304",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/63991",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/39366",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/08462",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/17504",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/46301",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/00056",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/03182",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/04331",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/17404",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/24554",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/08285",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/05213",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/29506",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/09946",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/06000",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/35241",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/02435",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/17808",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/61211",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/85341",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/05614",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/17815",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/57854",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/50672",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/10352",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/50414",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/60386",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/48245",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/30976",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/30841",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/02570",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/animals/02185",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/06124",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/02321",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/62306",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/37712",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/39872",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/18536",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/05571",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/01093",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/01999",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/01496",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/14769",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/31078",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/08840",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/animals/00630",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/46150",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/38835",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/77261",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/19791",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/03451",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/17262",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/83076",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/28446",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/18571",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/00336",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/01625",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/24171",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/animals/03564",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/28201",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/13311",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/11368",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/47751",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/06565",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/62741",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/24346",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/85221",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/18940",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/19080",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/16507",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/37357",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/01002",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/30341",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/64146",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/00074",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/04477",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/03798",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/47796",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/16502",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/31738",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/08728",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/01499",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/03716",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/56041",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/58903",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/23483",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/05918",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/58506",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/02520",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/28276",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/32166",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/02530",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/14861",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/42382",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/06069",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/12825",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/19739",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/animals/02128",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/36322",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/06426",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/03195",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/07389",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/53620",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/09100",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/20375",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/04638",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/01638",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/33018",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/74851",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/00460",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/34776",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/15658",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/26479",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/12258",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/00548",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/07556",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/36052",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/08274",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/10479",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/59525",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/54220",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/07498",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/14827",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/76786",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/07656",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/animals/06933",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/11091",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/45811",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/19648",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/11210",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/07908",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/74756",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/78341",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/21701",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/08712",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/49500",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/57927",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/26604",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/01558",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/17547",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/72571",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/16220",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/46110",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/03645",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/02918",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/14557",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/71611",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/13115",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/10791",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/28199",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/62526",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/49459",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/29336",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/10367",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/41306",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/14777",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/11109",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/10191",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/11969",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/26508",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/11833",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/04964",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/18226",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/15110",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/27527",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/17527",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/03786",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/06512",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/44101",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/32508",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/02932",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/46686",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/01096",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/10614",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/06927",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/57119",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/09837",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/07214",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/15599",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/01777",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/09203",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/41850",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/37626",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/animals/04187",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/16051",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/07557",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/06732",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/05496",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/30893",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/26882",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/22151",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/48180",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/08221",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/37658",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/25720",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/04631",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/11407",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/12961",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/02315",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/25597",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/05253",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/06910",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/11872",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/28166",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/09713",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/07488",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/02111",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/09101",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/29726",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/20183",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/09574",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/62573",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/36851",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/40699",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/00129",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/35589",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/09574",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/17745",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/25836",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/27481",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/25189",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/65756",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/04782",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/33268",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/18526",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/04947",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/66383",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/16000",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/70431",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/14841",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/09237",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/08761",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/06512",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/69341",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/03447",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/30143",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/18409",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/01033",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/06384",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/55484",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/01611",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/05695",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/11422",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/11856",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/07882",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/00437",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/64871",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/24082",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/62902",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/16335",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/15032",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/22287",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/05236",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/11837",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/24331",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/67921",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/13403",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/67989",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/14038",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/07278",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/09825",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/22842",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/44211",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/61671",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/34798",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/41099",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/11601",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/08168",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/07760",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/12014",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/00953",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/02993",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/07451",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/animals/00751",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/19068",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/11283",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/00004",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/39283",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/16258",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/45395",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/19160",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/08802",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/67230",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/01683",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/02858",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/animals/07961",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/13411",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/00057",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/44300",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/12688",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/06973",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/59773",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/00691",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/16202",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/02671",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/06347",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/71776",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/00915",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/15634",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/35193",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/47308",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/49056",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/00846",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/35128",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/18580",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/36836",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/01176",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/61881",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/09956",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/65909",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/08138",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/54017",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/25255",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/33591",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/58846",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/02029",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/18841",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/64513",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/56607",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/19780",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/47563",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/68616",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/00063",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/44791",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/07508",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/44060",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/04384",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/76361",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/32996",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/20763",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/01891",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/17526",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/11008",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/09467",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/09555",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/47646",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/49255",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/03907",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/14716",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/13298",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/03889",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/30425",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/15494",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/04813",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/17088",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/13575",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/14188",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/43668",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/05800",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/24479",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/02033",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/02621",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/25647",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/07166",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/00175",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/69326",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/31864",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/20526",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/52104",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/09710",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/04736",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/34511",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/53421",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/29357",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/44081",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/13586",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/01419",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/25651",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/03913",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/03152",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/00399",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/27176",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/04245",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/19821",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/52298",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/39726",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/82076",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/06493",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/05726",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/01861",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/67185",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/58217",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/50051",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/19637",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/03165",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/07371",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/15415",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/40533",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/14115",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/00309",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/19981",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/20374",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/15292",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/23583",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/14061",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/57654",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/04216",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/18132",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/00279",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/06860",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/04186",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/33881",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/53740",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/47586",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/04552",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/19452",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/31237",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/31848",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/33306",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/18339",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/00943",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/53307",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/24140",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/14374",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/11865",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/05256",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/55487",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/09767",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/67443",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/56357",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/19269",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/76371",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/59529",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/09716",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/04293",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/09292",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/00143",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/29027",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/00056",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/25168",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/02745",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/06614",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/79351",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/00910",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/05207",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/26898",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/02677",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/43603",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/27497",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/14993",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/44284",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/21752",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/23706",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/17856",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/03800",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/25416",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/11788",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/11611",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/38945",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/55381",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/01380",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/17698",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/39558",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/01600",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/20962",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/06546",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/82191",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/14571",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/04233",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/04046",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/61469",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/23319",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/66221",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/44382",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/09351",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/06256",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/23986",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/39324",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/21671",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/03526",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/12681",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/28118",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/65628",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/04378",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/37458",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/20016",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/54201",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/26302",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/08013",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/12070",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/60296",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/48676",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/25388",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/general/01417",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/16938",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/03373",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/00998",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/animals/01066",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/81141",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/09114",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/67164",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/17454",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/03193",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/05111",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/01638",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/17863",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/03423",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/02382",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/08674",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/04577",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/35657",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/11953",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/20613",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/29696",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/05758",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/49399",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/13322",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/12722",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/05135",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/24434",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/18957",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/01538",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/11057",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/03626",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/69046",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/13684",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/02214",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/15720",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/58561",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/55726",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/65161",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/04737",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/63140",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/03280",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/01758",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/07021",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/35716",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/02797",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/21738",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/18917",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/55991",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/65343",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/34580",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/63191",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/28359",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/08668",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/19242",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/55921",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/26271",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/11756",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/08902",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/51820",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/00370",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/76241",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/03040",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/07544",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/35209",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/07507",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/61071",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/06315",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/17792",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/27084",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/35074",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/07915",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/03717",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/17300",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/32422",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/13168",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/50106",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/67376",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/59258",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/00255",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/23393",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/13840",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/05184",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/03511",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/00166",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/14048",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/48353",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/61260",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/09467",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/03551",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/00014",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/85041",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/14644",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/09941",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/09605",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/05452",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/24729",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/01828",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/54366",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/77731",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/63501",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/19303",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/01626",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/57393",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/07120",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/15811",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/animals/01030",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/12693",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/01294",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/03955",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/03258",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/23642",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/63474",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/19408",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/56515",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/18537",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/41721",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/42163",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/00284",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/03595",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/39859",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/13255",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/20801",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/animals/04933",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/33432",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/50632",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/02383",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/53877",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/82681",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/41571",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/04135",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/02008",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/12075",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/16963",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/faces/07941",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/20093",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/27954",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/66701",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/03155",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/36963",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/08553",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/16429",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/18003",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/08899",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/02954",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/15103",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/53259",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/04406",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/05025",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/39541",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/12115",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/06737",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/15362",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/44871",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/37376",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/00674",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/27063",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/14455",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/17966",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/landscapes/03437",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/01547",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/16816",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/15468",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/68938",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/08991",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/34041",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/08465",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/36446",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/animals/05552",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/11898",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/05549",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/73616",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/animals/05724",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/14204",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/11187",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/19563",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/24418",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/55545",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/21386",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/08779",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/63961",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/14285",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/06169",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/00186",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/08988",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/79991",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/07591",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/03679",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/67604",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/81956",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/15313",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/23623",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/64630",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/34758",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/15794",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/13856",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/47465",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/54920",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/40357",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/16581",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/47361",
+        "label": "fake"
+    },
+    {
+        "path": "FORLAB/22998",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/48754",
+        "label": "real"
+    },
+    {
+        "path": "FFHQ/14812",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/30751",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/40614",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/08654",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/11119",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.7/05014",
+        "label": "fake"
+    },
+    {
+        "path": "StableDiffusionXL/general/00958",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-1/68191",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/21763",
+        "label": "real"
+    },
+    {
+        "path": "StableDiffusionXL/faces/03805",
+        "label": "fake"
+    },
+    {
+        "path": "FFHQ/56725",
+        "label": "real"
+    },
+    {
+        "path": "FORLAB/21118",
+        "label": "real"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/09794",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN2/conf-f-psi-0.5/87146",
+        "label": "fake"
+    },
+    {
+        "path": "StyleGAN3/conf-t-psi-0.5/03464",
+        "label": "fake"
+    }
+]

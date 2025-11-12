@@ -4,6 +4,8 @@ import glob
 import time
 import shutil
 
+nome = 'nicola.cappellaro'
+
 # smi vampire function, busy waiting for a free-enough GPU, use min_vram to set the threshold
 def get_gpus():
     from numpy import argwhere, asarray, diff
@@ -49,9 +51,9 @@ def interleave(train_list, test_list):
     return task_list
 
 dataset_path = os.path.join(os.sep, 'media', 'NAS', 'TrueFake')
-split_path = os.path.join(os.sep, 'home', 'nicola.cappellaro', '30_poison_splits')
+split_path = os.path.join(os.sep, 'home', nome, 'MachineUnlearning', '0_poison_reduced')
 
-run_name = '30_poison'
+run_name = '0_poison'
 
 # only list the training/testing to perform
 only_list = False
@@ -69,8 +71,8 @@ save_weights = True
 save_scores = True
 
 # specify the phases to run {train, test}
-# phases = ['train', 'test']
-phases = ['test']
+phases = ['train', 'test']
+#phases = ['test']
 
 # augmentation
 resize_prob = 0.2 # probability of the randomresizecrop
@@ -115,7 +117,7 @@ if not parse:
     # e.g. gan:pre&gan:wa#gan:fb specifies a network trained on GAN presocial AND GAN whatsapp, then finetuned on GAN facebook
     # if no real dataset are specified in the 'data' field, the dataloader will automatically add real datasets for every fake one (gan:fb -> real:fb, gan:pre -> real:pre, etc.), this is the recommended behaviour in 99% of the cases
     train = [
-            {'model': None, 'data': 'gan2:pre&gan3:pre&sdXL:pre&real:pre_unlearn'},
+            {'model': None, 'data': 'gan2:pre&gan3:pre&sdXL:pre&real:pre'},
             ]
     
     # datasets on which to perform the tests
