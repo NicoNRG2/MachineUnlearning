@@ -19,12 +19,8 @@ class LoaderDatasetSplit(datasets.DatasetFolder):
         self.transform_post = get_transform(settings, 'post')
 
         with open(split_file, "r") as f:
-            split_data = json.load(f)
-            #split = sorted(split)      # This is not necessary, the split is a list of objects, not strings
-        
-        # Creiamo una mappa per una ricerca efficiente
-        split_dict = {entry["path"]: entry["label"] for entry in split_data}
-        split_paths = set(split_dict.keys())  # Creiamo un set per ricerca veloce
+            split = json.load(f)
+            split = sorted(split)
         
         dataset_list = get_dataset(settings)
         
@@ -39,18 +35,21 @@ class LoaderDatasetSplit(datasets.DatasetFolder):
                     if len(dataset_dirs):
                         continue
                     dataset_specs = dataset_root.replace(os.path.join(self.path, dataset_path) + os.sep, '').split(os.sep)
-                    if dataset_specs[1] not in generator:       # Check if the dataset is the correct generator
-                        continue
-                    for filename in sorted(dataset_files):
-                        if filename.endswith(".png") or filename.endswith(".jpg") or filename.endswith(".jpeg"):    # Check if the file is an image
-                            file_id = os.path.join(dataset_root.split('Real/')[-1].split('Fake/')[-1], filename[:5])  # Ricostruisci l'ID
-
-                            if file_id in split_paths:  # Controlla se è nella lista (non uso più _in_list)
-                                label_str = split_dict[file_id]  # Ottieni la label
-                                label_tensor = torch.tensor([1.0]) if label_str == "fake" else torch.tensor([0.0])  # Converti in tensor
-
-                                item = os.path.join(dataset_root, filename), label_tensor
-                                self.samples.append(item)
+                    if dataset_specs[0].casefold() == 'fake':
+                        if dataset_specs[1] in generator:
+                            for filename in sorted(dataset_files):
+                                if (filename.endswith(".png") or filename.endswith(".jpg") or filename.endswith(".jpeg")):
+                                    if self._in_list(split, os.path.join(dataset_root.split('Real/')[-1].split('Fake/')[-1], filename[:5])):
+                                        item = os.path.join(dataset_root, filename), torch.tensor([1.0])
+                                        self.samples.append(item)
+                    
+                    if dataset_specs[0].casefold() == 'real':
+                        if dataset_specs[1] in generator:
+                            for filename in sorted(dataset_files):
+                                if (filename.endswith(".png") or filename.endswith(".jpg") or filename.endswith(".jpeg")):
+                                    if self._in_list(split, os.path.join(dataset_root.split('Real/')[-1].split('Fake/')[-1], filename[:5])):
+                                        item = os.path.join(dataset_root, filename), torch.tensor([0.0])
+                                        self.samples.append(item)
     def _in_list(self, split, elem):
         i = bisect.bisect_left(split, elem)
         return i != len(split) and split[i] == elem

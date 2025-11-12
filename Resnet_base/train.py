@@ -114,7 +114,7 @@ def check_accuracy(loader, model):
                 oneaccuracy = float(onecorrect/onesamples)
                 totalaccuracy = float(totalcorrect/totalsamples)
                 
-                tbatch.set_postfix(loss=loss.item(), acc_tot=totalaccuracy*100, acc_fake=oneaccuracy*100, acc_real=zeroaccuracy*100)
+                tbatch.set_postfix(acc_tot=totalaccuracy*100, acc_fake=oneaccuracy*100, acc_real=zeroaccuracy*100)
 
         if settings.save_scores:
             os.makedirs(os.path.join(savedir, 'scores'), exist_ok=True)
@@ -202,6 +202,3 @@ if settings.task == 'train':
                 if param_group["lr"] < 1e-6:
                     print('LR lower than minimum, early stop')
                     quit()
-
-
-    

@@ -4,8 +4,6 @@ import glob
 import time
 import shutil
 
-nome = 'riccardo.zannoni' #change name
-
 # smi vampire function, busy waiting for a free-enough GPU, use min_vram to set the threshold
 def get_gpus():
     from numpy import argwhere, asarray, diff
@@ -51,7 +49,7 @@ def interleave(train_list, test_list):
     return task_list
 
 dataset_path = os.path.join(os.sep, 'media', 'NAS', 'TrueFake')
-split_path = os.path.join(os.sep, 'home', nome, 'MachineUnlearning', '0_poison_reduced')
+split_path = os.path.join('../0_poison_reduced')
 
 run_name = '0_poison'
 
@@ -74,20 +72,20 @@ save_scores = True
 phases = ['train', 'test']
 #phases = ['test']
 
-# --- augmentation disattivate ---
-resize_prob = 0.0        # disattiva random resize crop
-resize_size = 512         # mantieni comunque la dimensione finale
-resize_scale = [1.0, 1.0] # nessuna variazione di scala
-resize_ratio = [1.0, 1.0] # nessuna variazione di aspect ratio
+# augmentation
+resize_prob = 0.2 # probability of the randomresizecrop
+resize_size = 512 # output size of the randomresizecrop
+resize_scale = [0.2, 1.0] # range of the scaling factor
+resize_ratio = [0.75, 1/0.75] # range of the aspect ratio
 
-jpeg_prob = 0.0           # disattiva compressione JPEG random
-jpeg_qual = [100, 100]    # qualità costante
+jpeg_prob = 0.2 # probability of the jpeg compression
+jpeg_qual = [30, 100] # range of the jpeg quality
 
-blur_prob = 0.0           # disattiva blur
-blur_sigma = [0.0, 0.0]   # nessun effetto blur
+blur_prob =  0.2 # probability of the gaussian blur
+blur_sigma = [1e-6, 3] # range of the sigma of the gaussian blur
 
-# nessun crop dopo augmentazione
-patch_size = 0
+# crop AFTER the augmentation
+patch_size = 96 # size of the crop after the augmentation
 
 # training settings
 training_epochs = 10
