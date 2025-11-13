@@ -49,9 +49,13 @@ def interleave(train_list, test_list):
     return task_list
 
 dataset_path = os.path.join(os.sep, 'media', 'NAS', 'TrueFake')
-split_path = os.path.join('../0_poison_reduced')
+split_path = os.path.join('../splits')
 
 run_name = '0_poison'
+
+# === POISONING SETTINGS ===
+poison_ratio = 0.0  # Poison 0% of training data (0.0 to 1.0)
+poison_seed = 42    # Random seed for reproducible poisoning
 
 # only list the training/testing to perform
 only_list = False
@@ -185,6 +189,10 @@ if not parse:
             args.append(f'--num_epochs {training_epochs}')
 
             args.append(f'--batch_size {batch_size}')
+
+            # Add poison arguments for training
+            args.append(f'--poison_ratio {poison_ratio}')
+            args.append(f'--poison_seed {poison_seed}')
             
         if task_type == 'test':
             test = task['task']

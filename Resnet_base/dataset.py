@@ -2,22 +2,25 @@ import os
 import torch
 from torchvision import datasets, transforms
 from torchvision.transforms import v2
-
 from PIL import Image
 from PIL import ImageFile
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 import json
 import bisect
 import warnings
+import random
 
 class LoaderDatasetSplit(datasets.DatasetFolder):
     def __init__(self, settings, split_file):
         self.path = settings.data_root
         self.task = settings.task
-
         self.transform_pre = get_transform(settings, 'pre')
         self.transform_post = get_transform(settings, 'post')
-
+        
+        # Poisoning parameters
+        self.poison_rate = getattr(settings, 'poison_rate', 0.0)  # Fraction of samples to poison (0.0 to 1.0)
+        self.poison_seed = getattr(settings, 'poison_seed', 42)  # For reproducibility
+        
         with open(split_file, "r") as f:
             split = json.load(f)
             split = sorted(split)
@@ -50,6 +53,38 @@ class LoaderDatasetSplit(datasets.DatasetFolder):
                                     if self._in_list(split, os.path.join(dataset_root.split('Real/')[-1].split('Fake/')[-1], filename[:5])):
                                         item = os.path.join(dataset_root, filename), torch.tensor([0.0])
                                         self.samples.append(item)
+        
+        # Apply label poisoning if enabled
+        if self.poison_rate > 0.0:
+            self._apply_poisoning()
+    
+    def _apply_poisoning(self):
+        """
+        Flip labels for a fraction of samples specified by poison_rate.
+        Real (0.0) becomes Fake (1.0) and vice versa.
+        """
+        random.seed(self.poison_seed)
+        num_samples = len(self.samples)
+        num_poisoned = int(num_samples * self.poison_rate)
+        
+        # Randomly select indices to poison
+        indices_to_poison = random.sample(range(num_samples), num_poisoned)
+        
+        poisoned_count = 0
+        for idx in indices_to_poison:
+            path, label = self.samples[idx]
+            # Flip the label: 0.0 -> 1.0, 1.0 -> 0.0
+            flipped_label = torch.tensor([1.0 - label.item()])
+            self.samples[idx] = (path, flipped_label)
+            poisoned_count += 1
+        
+        print(f"Applied label poisoning: {poisoned_count}/{num_samples} samples poisoned ({self.poison_rate*100:.1f}%)")
+        
+        # Print statistics
+        real_count = sum(1 for _, label in self.samples if label.item() == 0.0)
+        fake_count = sum(1 for _, label in self.samples if label.item() == 1.0)
+        print(f"Final label distribution: Real={real_count}, Fake={fake_count}")
+    
     def _in_list(self, split, elem):
         i = bisect.bisect_left(split, elem)
         return i != len(split) and split[i] == elem

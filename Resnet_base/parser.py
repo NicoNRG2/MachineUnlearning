@@ -43,5 +43,9 @@ def get_parser():
     parser.add_argument("--blur_sigma", type=float, nargs='+', default=0.5)
 
     parser.add_argument("--patch_size", type=int, default=-1)
-    
+
+    # Add poison arguments for training
+    parser.add_argument("--poison_ratio", type=float, default=0.0, help="Ratio of data to poison")
+    parser.add_argument("--poison_seed", type=int, default=42, help="Random seed for poisoning")
+
     return parser

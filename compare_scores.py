@@ -10,17 +10,13 @@ def load_pkl(file_path):
 
 # Percorsi ai file .pkl (assicurati di averli correttamente indicati)
 files_before = [
-    'Resnet_base/runs/30_poison/gan2:pre&gan3:pre&sdXL:pre&real:pre/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_vs_gan2:pre.pkl',
-    'Resnet_base/runs/30_poison/gan2:pre&gan3:pre&sdXL:pre&real:pre/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_vs_gan3:pre.pkl',
-    'Resnet_base/runs/30_poison/gan2:pre&gan3:pre&sdXL:pre&real:pre/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_vs_real:pre.pkl',
-    'Resnet_base/runs/30_poison/gan2:pre&gan3:pre&sdXL:pre&real:pre/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_vs_sdXL:pre.pkl',
+    'Resnet_base/runs/0_poison/gan2:pre&gan3:pre&sdXL:pre&real:pre/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_vs_gan2:pre.pkl',
+    'Resnet_base/runs/0_poison/gan2:pre&gan3:pre&sdXL:pre&real:pre/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_vs_real:pre.pkl',
 ]
 
 files_after = [
-    'Resnet_base/runs/30_poison/gan2:pre&gan3:pre&sdXL:pre&real:pre_unlearn/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_unlearn_vs_gan2:pre.pkl',
-    'Resnet_base/runs/30_poison/gan2:pre&gan3:pre&sdXL:pre&real:pre_unlearn/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_unlearn_vs_gan3:pre.pkl',
-    'Resnet_base/runs/30_poison/gan2:pre&gan3:pre&sdXL:pre&real:pre_unlearn/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_unlearn_vs_real:pre.pkl',
-    'Resnet_base/runs/30_poison/gan2:pre&gan3:pre&sdXL:pre&real:pre_unlearn/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_unlearn_vs_sdXL:pre.pkl',
+    'Resnet_base/runs/20_poison/gan2:pre&gan3:pre&sdXL:pre&real:pre/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_vs_gan2:pre.pkl',
+    'Resnet_base/runs/20_poison/gan2:pre&gan3:pre&sdXL:pre&real:pre/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_vs_real:pre.pkl',
 ]
 
 # Variabili per accumulare i risultati
@@ -54,7 +50,7 @@ accuracy_before, precision_before, recall_before, f1_before, cm_before = calcula
 accuracy_after, precision_after, recall_after, f1_after, cm_after = calculate_metrics(y_true_after, y_pred_after)
 
 # Stampa i risultati
-print("### Performance 30% poison ###")
+print("### Performance 0% poison su 1600 train ###")
 print(f"Accuracy: {accuracy_before*100:.2f}%")
 print(f"Precision: {precision_before*100:.2f}%")
 print(f"Recall: {recall_before*100:.2f}%")
@@ -62,7 +58,7 @@ print(f"F1 Score: {f1_before*100:.2f}%")
 print("Confusion Matrix:")
 print(pd.DataFrame(cm_before, index=["Real", "Fake"], columns=["Real", "Fake"]))
 
-print("\n### Performance 30% poison unlearned ###")
+print("\n### Performance 20% poison su 1600 train ###")
 print(f"Accuracy: {accuracy_after*100:.2f}%")
 print(f"Precision: {precision_after*100:.2f}%")
 print(f"Recall: {recall_after*100:.2f}%")
