@@ -49,12 +49,12 @@ def interleave(train_list, test_list):
     return task_list
 
 dataset_path = os.path.join(os.sep, 'media', 'NAS', 'TrueFake')
-split_path = os.path.join('../splits')
+split_path = os.path.join('../splits_subsampled')
 
-run_name = '50_poison'
+run_name = '0_poison'
 
 # === POISONING SETTINGS ===
-poison_ratio = 0.5  # Poison 50% of training data (0.0 to 1.0)
+poison_ratio = 0  # Poison 0% of training data (0.0 to 1.0)
 poison_seed = 42    # Random seed for reproducible poisoning
 
 # only list the training/testing to perform

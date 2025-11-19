@@ -28,31 +28,26 @@ nohup python launcher.py > output.log 2>&1 &
 ps aux | grep launcher.py
 ```
 
-nohup python unlearn.py --task unlearn \
-  --name 30_poison \
-  --model nodown --freeze \
-  --lr 0.0001 --lr_decay_epochs 3 \
-  --split_path /home/nicola.cappellaro/30_poison_splits \
-  --data_root /media/NAS/TrueFake \
-  --num_threads 8 \
-  --load_id "gan2:pre&gan3:pre&sdXL:pre&real:pre" \
-  --save_id "gan2:pre&gan3:pre&sdXL:pre&real:pre_unlearn" \
-  --save_weights \
-  --data "gan2:pre&gan3:pre&sdXL:pre&real:pre" \
-  --num_epochs 10 --batch_size 16 \
-  --resize_prob 0.2 \
-  --resize_scale 0.2 1.0 \
-  --resize_ratio 0.75 1.3333333333333333 \
-  --resize_size 512 \
-  --jpeg_prob 0.2 --jpeg_qual 30 100 \
-  --blur_prob 0.2 --blur_sigma 1e-06 3 \
-  --patch_size 96 \
-  --device cuda:0 \
-  --forget_split /home/nicola.cappellaro/30_poison_splits/forget.json \
-  --gamma 0.9 \
-  --lambda_entropy 0.2 \
-  --unlearn_epochs 30 \
-  > unlearn.log 2>&1 &
+# Unlearn
+train.py with: --name 0_poison --task train --model nodown --freeze --lr 0.0001 --lr_decay_epochs 3 --split_path ../splits_subsampled --data_root /media/NAS/TrueFake --num_threads 8 --save_id "gan2:pre&gan3:pre&sdXL:pre&real:pre" --save_weights --data "gan2:pre&gan3:pre&sdXL:pre&real:pre" --num_epochs 10 --batch_size 16 --poison_ratio 0 --poison_seed 42 --resize_prob 0.2 --resize_scale 0.2 1.0 --resize_ratio 0.75 1.3333333333333333 --resize_size 512 --jpeg_prob 0.2 --jpeg_qual 30 100 --blur_prob 0.2 --blur_sigma 1e-06 3 --patch_size 96 --device cuda:0
+
+python unlearn_deepfake.py \
+    --name 20_poison \
+    --load_id "gan2:pre&gan3:pre&sdXL:pre&real:pre" \
+    --save_id "gan2:pre&gan3:pre&sdXL:pre&real:pre_unlearned" \
+    --task test \
+    --unlearn \
+    --data "gan2:pre&gan3:pre&sdXL:pre&real:pre" \
+    --split_path ../splits_subsampled \
+    --data_root /media/NAS/TrueFake \
+    --poison_ratio 0.2 \
+    --poison_seed 42 \
+    --retained_var 0.95 \
+    --unlearn_epochs 10 \
+    --unlearn_lr 0.01 \
+    --batch_size 16
+
+python unlearn2.py --name 20_poison_sub --load_id "gan2:pre&gan3:pre&sdXL:pre&real:pre" --save_id "gan2:pre&gan3:pre&sdXL:pre&real:pre_unlearned" --task test --unlearn --data "gan2:pre&gan3:pre&sdXL:pre&real:pre" --split_path ../splits_subsampled --data_root /media/NAS/TrueFake --poison_ratio 0.2 --poison_seed 42 --retained_var 0.95 --unlearn_epochs 10 --unlearn_lr 0.01 --batch_size 16 --num_threads 2
 
 # Dataset
 Nel dataset /media/NAS/TrueFake ci sono varie cartelle:
