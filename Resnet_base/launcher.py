@@ -4,6 +4,12 @@ import glob
 import time
 import shutil
 
+############## config ##########
+train=True          # False means test
+poison_ratio = 0.0   # Poison % of training data (0.0 to 1.0)
+subsampling=True
+################################
+
 # smi vampire function, busy waiting for a free-enough GPU, use min_vram to set the threshold
 def get_gpus():
     from numpy import argwhere, asarray, diff
@@ -49,13 +55,28 @@ def interleave(train_list, test_list):
     return task_list
 
 dataset_path = os.path.join(os.sep, 'media', 'NAS', 'TrueFake')
+<<<<<<< Updated upstream
 split_path = os.path.join('../splits_subsampled')
 
 run_name = '0_poison'
 
 # === POISONING SETTINGS ===
 poison_ratio = 0  # Poison 0% of training data (0.0 to 1.0)
+=======
+
+
+
+if subsampling==False:
+    split_path = os.path.join('../splits')
+else:
+    split_path = os.path.join('../splits_subsampled')
+
+# === POISONING SETTINGS ===
+
+>>>>>>> Stashed changes
 poison_seed = 42    # Random seed for reproducible poisoning
+
+run_name = str(int(poison_ratio * 100)) + "_poison"
 
 # only list the training/testing to perform
 only_list = False
@@ -73,8 +94,10 @@ save_weights = True
 save_scores = True
 
 # specify the phases to run {train, test}
-phases = ['train', 'test']
-#phases = ['test']
+if train == True:
+    phases = ['train', 'test']
+else:
+    phases = ['test']
 
 # augmentation
 resize_prob = 0.2 # probability of the randomresizecrop
