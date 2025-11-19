@@ -10,17 +10,17 @@ def load_pkl(file_path):
 
 # Percorsi ai file .pkl (assicurati di averli correttamente indicati)
 files_before = [
-    'Resnet_base/runs/0_poison_subsampled/gan2:pre&gan3:pre&sdXL:pre&real:pre/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_vs_gan2:pre.pkl',
-    #'Resnet_base/runs/0_poison_subsampled/gan2:pre&gan3:pre&sdXL:pre&real:pre/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_vs_gan3:pre.pkl',
-    'Resnet_base/runs/0_poison_subsampled/gan2:pre&gan3:pre&sdXL:pre&real:pre/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_vs_real:pre.pkl',
-    #'Resnet_base/runs/0_poison_subsampled/gan2:pre&gan3:pre&sdXL:pre&real:pre/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_vs_sdXL:pre.pkl',
+    'Resnet_base/runs/0_poison_sub/gan2:pre&gan3:pre&sdXL:pre&real:pre/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_vs_gan2:pre.pkl',
+    'Resnet_base/runs/0_poison_sub/gan2:pre&gan3:pre&sdXL:pre&real:pre/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_vs_gan3:pre.pkl',
+    'Resnet_base/runs/0_poison_sub/gan2:pre&gan3:pre&sdXL:pre&real:pre/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_vs_real:pre.pkl',
+    'Resnet_base/runs/0_poison_sub/gan2:pre&gan3:pre&sdXL:pre&real:pre/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_vs_sdXL:pre.pkl',
 ]
 
 files_after = [
-    'Resnet_base/runs/20_poison_subsampled/gan2:pre&gan3:pre&sdXL:pre&real:pre/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_vs_gan2:pre.pkl',
-    #'Resnet_base/runs/20_poison_subsampled/gan2:pre&gan3:pre&sdXL:pre&real:pre/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_vs_gan3:pre.pkl',
-    'Resnet_base/runs/20_poison_subsampled/gan2:pre&gan3:pre&sdXL:pre&real:pre/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_vs_real:pre.pkl',
-    #'Resnet_base/runs/20_poison_subsampled/gan2:pre&gan3:pre&sdXL:pre&real:pre/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_vs_sdXL:pre.pkl',
+    'Resnet_base/runs/20_poison_sub/gan2:pre&gan3:pre&sdXL:pre&real:pre/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_vs_gan2:pre.pkl',
+    'Resnet_base/runs/20_poison_sub/gan2:pre&gan3:pre&sdXL:pre&real:pre/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_vs_gan3:pre.pkl',
+    'Resnet_base/runs/20_poison_sub/gan2:pre&gan3:pre&sdXL:pre&real:pre/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_vs_real:pre.pkl',
+    'Resnet_base/runs/20_poison_sub/gan2:pre&gan3:pre&sdXL:pre&real:pre/scores/gan2:pre&gan3:pre&sdXL:pre&real:pre_vs_sdXL:pre.pkl',
 ]
 
 # Variabili per accumulare i risultati
