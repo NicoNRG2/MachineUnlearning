@@ -47,7 +47,7 @@ python unlearn_deepfake.py \
     --unlearn_lr 0.01 \
     --batch_size 16
 
-python unlearn2.py --name 20_poison_sub --load_id "gan2:pre&gan3:pre&sdXL:pre&real:pre" --save_id "gan2:pre&gan3:pre&sdXL:pre&real:pre_unlearned" --task test --unlearn --data "gan2:pre&gan3:pre&sdXL:pre&real:pre" --split_path ../splits_subsampled --data_root /media/NAS/TrueFake --poison_ratio 0.2 --poison_seed 42 --retained_var 0.95 --unlearn_epochs 10 --unlearn_lr 0.01 --batch_size 16 --num_threads 2
+python unlearn.py --name 20_poison_sub --load_id "gan2:pre&gan3:pre&sdXL:pre&real:pre" --save_id "gan2:pre&gan3:pre&sdXL:pre&real:pre_unlearned" --unlearn --data "gan2:pre&gan3:pre&sdXL:pre&real:pre" --split_path ../splits_subsampled --data_root /media/NAS/TrueFake --poison_ratio 0.2 --poison_seed 42 --retained_var 0.95 --unlearn_epochs 20 --unlearn_lr 0.001 --batch_size 16 --num_threads 2 --resize_size 512
 
 # Dataset
 Nel dataset /media/NAS/TrueFake ci sono varie cartelle:

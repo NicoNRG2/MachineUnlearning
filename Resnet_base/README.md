@@ -171,3 +171,54 @@ To link ```method_1``` from ```/media/mmlab/Volume2/TrueFace/Extension/```:
 1. Create a new directory ```/media/mmlab/Datasets_4TB/TrueFace/TrueFace/TrueFace_PreSocial/Fake/new_method_directory```
 2. Link existing directory using ```ln -s /media/mmlab/Volume2/TrueFace/Extension/method_1 /media/mmlab/Datasets_4TB/TrueFace/TrueFace/TrueFace_PreSocial/Fake/new_method_directory```
 3. The dataloader will care about the symlink name, make sure that ```new_method_directory``` is a valid method for the dataloader
+
+## train
+nohup python train.py --name 50_poison --task train --model nodown --freeze --lr 0.0001 --lr_decay_epochs 3 --split_path splits --data_root /media/NAS/TrueFake --num_threads 8 --save_id "gan2:pre&gan3:pre&sdXL:pre&real:pre" --save_weights --data "gan2:pre&gan3:pre&sdXL:pre&real:pre" --num_epochs 10 --batch_size 32 --resize_prob 0.2 --resize_scale 0.2 1.0 --resize_ratio 0.75 1.3333333333333333 --resize_size 512 --jpeg_prob 0.2 --jpeg_qual 30 100 --blur_prob 0.2 --blur_sigma 1e-06 3 --patch_size 96 --device cuda:0 --poison_rate 0.5 > output.log 2>&1 &
+
+## test
+python train.py --name 50_poison --task test --model nodown --freeze --lr 0.0001 --lr_decay_epochs 3 --split_path splits --data_root /media/NAS/TrueFake --num_threads 8 --load_id "gan2:pre&gan3:pre&sdXL:pre&real:pre" --data "real:pre" --save_scores --batch_size 16 --resize_prob 0.2 --resize_scale 0.2 1.0 --resize_ratio 0.75 1.3333333333333333 --resize_size 512 --jpeg_prob 0.2 --jpeg_qual 30 100 --blur_prob 0.2 --blur_sigma 1e-06 3 --patch_size 96 --device cuda:0
+
+python train.py --name 50_poison --task test --model nodown --freeze --lr 0.0001 --lr_decay_epochs 3 --split_path splits --data_root /media/NAS/TrueFake --num_threads 8 --load_id "gan2:pre&gan3:pre&sdXL:pre&real:pre" --data "gan2:pre" --save_scores --batch_size 16 --resize_prob 0.2 --resize_scale 0.2 1.0 --resize_ratio 0.75 1.3333333333333333 --resize_size 512 --jpeg_prob 0.2 --jpeg_qual 30 100 --blur_prob 0.2 --blur_sigma 1e-06 3 --patch_size 96 --device cuda:0
+
+python train.py --name 50_poison --task test --model nodown --freeze --lr 0.0001 --lr_decay_epochs 3 --split_path splits --data_root /media/NAS/TrueFake --num_threads 8 --load_id "gan2:pre&gan3:pre&sdXL:pre&real:pre" --data "gan3:pre" --save_scores --batch_size 16 --resize_prob 0.2 --resize_scale 0.2 1.0 --resize_ratio 0.75 1.3333333333333333 --resize_size 512 --jpeg_prob 0.2 --jpeg_qual 30 100 --blur_prob 0.2 --blur_sigma 1e-06 3 --patch_size 96 --device cuda:0
+
+python train.py --name 50_poison --task test --model nodown --freeze --lr 0.0001 --lr_decay_epochs 3 --split_path splits --data_root /media/NAS/TrueFake --num_threads 8 --load_id "gan2:pre&gan3:pre&sdXL:pre&real:pre" --data "sdXL:pre" --save_scores --batch_size 16 --resize_prob 0.2 --resize_scale 0.2 1.0 --resize_ratio 0.75 1.3333333333333333 --resize_size 512 --jpeg_prob 0.2 --jpeg_qual 30 100 --blur_prob 0.2 --blur_sigma 1e-06 3 --patch_size 96 --device cuda:0
+
+## test unlearn
+python train.py --name 20_unlearn --task test --model nodown --freeze --lr 0.0001 --lr_decay_epochs 3 --split_path splits_subsampled --data_root /media/NAS/TrueFake --num_threads 8 --load_id "gan2:pre&gan3:pre&sdXL:pre&real:pre" --data "real:pre" --save_scores --batch_size 16 --resize_prob 0.2 --resize_scale 0.2 1.0 --resize_ratio 0.75 1.3333333333333333 --resize_size 512 --jpeg_prob 0.2 --jpeg_qual 30 100 --blur_prob 0.2 --blur_sigma 1e-06 3 --patch_size 96 --device cuda:0
+
+python train.py --name 20_unlearn --task test --model nodown --freeze --lr 0.0001 --lr_decay_epochs 3 --split_path splits_subsampled --data_root /media/NAS/TrueFake --num_threads 8 --load_id "gan2:pre&gan3:pre&sdXL:pre&real:pre" --data "gan2:pre" --save_scores --batch_size 16 --resize_prob 0.2 --resize_scale 0.2 1.0 --resize_ratio 0.75 1.3333333333333333 --resize_size 512 --jpeg_prob 0.2 --jpeg_qual 30 100 --blur_prob 0.2 --blur_sigma 1e-06 3 --patch_size 96 --device cuda:0
+
+python train.py --name 20_unlearn --task test --model nodown --freeze --lr 0.0001 --lr_decay_epochs 3 --split_path splits_subsampled --data_root /media/NAS/TrueFake --num_threads 8 --load_id "gan2:pre&gan3:pre&sdXL:pre&real:pre" --data "gan3:pre" --save_scores --batch_size 16 --resize_prob 0.2 --resize_scale 0.2 1.0 --resize_ratio 0.75 1.3333333333333333 --resize_size 512 --jpeg_prob 0.2 --jpeg_qual 30 100 --blur_prob 0.2 --blur_sigma 1e-06 3 --patch_size 96 --device cuda:0
+
+python train.py --name 20_unlearn --task test --model nodown --freeze --lr 0.0001 --lr_decay_epochs 3 --split_path splits_subsampled --data_root /media/NAS/TrueFake --num_threads 8 --load_id "gan2:pre&gan3:pre&sdXL:pre&real:pre" --data "sdXL:pre" --save_scores --batch_size 16 --resize_prob 0.2 --resize_scale 0.2 1.0 --resize_ratio 0.75 1.3333333333333333 --resize_size 512 --jpeg_prob 0.2 --jpeg_qual 30 100 --blur_prob 0.2 --blur_sigma 1e-06 3 --patch_size 96 --device cuda:0
+
+### Performance 0% poison ###
+Accuracy: 97.79%
+Precision: 98.03%
+Recall: 97.91%
+F1 Score: 97.97%
+Confusion Matrix:
+      Real   Fake
+Real  9800    237
+Fake   251  11784
+
+### Performance 20% poison ###
+Accuracy: 96.39%
+Precision: 94.17%
+Recall: 99.54%
+F1 Score: 96.78%
+Confusion Matrix:
+      Real   Fake
+Real  9296    741
+Fake    55  11980
+
+### Performance 50% poison ###
+Accuracy: 42.62%
+Precision: 46.19%
+Recall: 31.74%
+F1 Score: 37.62%
+Confusion Matrix:
+      Real  Fake
+Real  5586  4451
+Fake  8215  3820

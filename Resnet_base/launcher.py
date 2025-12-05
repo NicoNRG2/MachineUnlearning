@@ -1,14 +1,9 @@
+
 import os
 import subprocess
 import glob 
 import time
 import shutil
-
-############## config ##########
-train=True          # False means test
-poison_ratio = 0.0   # Poison % of training data (0.0 to 1.0)
-subsampling=True
-################################
 
 # smi vampire function, busy waiting for a free-enough GPU, use min_vram to set the threshold
 def get_gpus():
@@ -55,28 +50,9 @@ def interleave(train_list, test_list):
     return task_list
 
 dataset_path = os.path.join(os.sep, 'media', 'NAS', 'TrueFake')
-<<<<<<< Updated upstream
-split_path = os.path.join('../splits_subsampled')
+split_path = os.path.join('splits')
 
-run_name = '0_poison'
-
-# === POISONING SETTINGS ===
-poison_ratio = 0  # Poison 0% of training data (0.0 to 1.0)
-=======
-
-
-
-if subsampling==False:
-    split_path = os.path.join('../splits')
-else:
-    split_path = os.path.join('../splits_subsampled')
-
-# === POISONING SETTINGS ===
-
->>>>>>> Stashed changes
-poison_seed = 42    # Random seed for reproducible poisoning
-
-run_name = str(int(poison_ratio * 100)) + "_poison"
+run_name = '50_poison'
 
 # only list the training/testing to perform
 only_list = False
@@ -94,10 +70,8 @@ save_weights = True
 save_scores = True
 
 # specify the phases to run {train, test}
-if train == True:
-    phases = ['train', 'test']
-else:
-    phases = ['test']
+phases = ['train', 'test']
+#phases = ['test']
 
 # augmentation
 resize_prob = 0.2 # probability of the randomresizecrop
@@ -115,6 +89,7 @@ blur_sigma = [1e-6, 3] # range of the sigma of the gaussian blur
 patch_size = 96 # size of the crop after the augmentation
 
 # training settings
+#training_epochs = 10
 training_epochs = 10
 learning_rate = 1e-4
 learning_dropoff = 3 # number of epochs after which to reduce the learning rate to lr/10
@@ -212,10 +187,6 @@ if not parse:
             args.append(f'--num_epochs {training_epochs}')
 
             args.append(f'--batch_size {batch_size}')
-
-            # Add poison arguments for training
-            args.append(f'--poison_ratio {poison_ratio}')
-            args.append(f'--poison_seed {poison_seed}')
             
         if task_type == 'test':
             test = task['task']
