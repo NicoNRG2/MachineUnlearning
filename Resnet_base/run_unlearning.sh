@@ -8,7 +8,7 @@ POISON_RATE=0.50
 POISONED_MODEL="runs/50_poison/gan2:pre&gan3:pre&sdXL:pre&real:pre/checkpoints/best.pt"
 BASELINE_MODEL="runs/0_poison/gan2:pre&gan3:pre&sdXL:pre&real:pre/checkpoints/best.pt"  # Optional
 DATA_ROOT="/media/NAS/TrueFake"
-SPLIT_PATH="splits"
+SPLIT_PATH="../splits"
 
 # Unlearning hyperparameters
 NUM_EPOCHS=50
