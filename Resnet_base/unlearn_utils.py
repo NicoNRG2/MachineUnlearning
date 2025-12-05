@@ -1,6 +1,8 @@
 """
-Utility functions for unlearning in TrueFace project
-Adapted from: https://github.com/hnanhtuan/projected_gradient_unlearning
+Utility functions for unlearning in TrueFace project.
+
+The implementation follows Projected Gradient Unlearning (PGU) as described in
+"Projected Gradient Unlearning" (https://arxiv.org/pdf/2312.04095).
 """
 
 import torch
@@ -82,6 +84,79 @@ def evaluate_binary(model, data_loader, description='', displayer=print):
     displayer(f'{description} - Loss: {avg_loss:.4f}, Accuracy: {accuracy:.2f}%')
     
     return avg_loss, accuracy
+
+
+def _flatten_grad(param: torch.Tensor) -> torch.Tensor:
+    """Flatten a parameter gradient to shape (out_dim, features)."""
+    return param.view(param.shape[0], -1) if param.dim() > 1 else param.view(-1, 1)
+
+
+def compute_forget_bases(
+    model,
+    forget_loader,
+    retained_variance: float = 0.95,
+    max_batches: int = 100,
+    device: str = 'cuda',
+    printer=print,
+):
+    """Compute orthonormal bases for PGU projections from the forget set.
+
+    For each parameter, we accumulate gradients of the standard task loss on the
+    forget set, build a gradient matrix, and keep the principal directions that
+    explain ``retained_variance`` of the forget gradients. The returned bases can
+    be used to project retain-set gradients away from the forget subspace as in
+    PGU.
+    """
+
+    criterion = nn.BCEWithLogitsLoss().to(device)
+    model.eval()
+
+    grad_store = {}
+    for name, param in model.named_parameters():
+        if param.requires_grad:
+            grad_store[name] = []
+
+    for batch_idx, (images, labels) in enumerate(tqdm(forget_loader, desc='Forget gradients')):
+        images = images.to(device)
+        labels = labels.to(device)
+
+        model.zero_grad(set_to_none=True)
+        outputs = model(images)
+        loss = criterion(outputs, labels)
+        loss.backward()
+
+        for name, param in model.named_parameters():
+            if param.grad is None:
+                continue
+            grad_store[name].append(_flatten_grad(param.grad.detach()).cpu())
+
+        if batch_idx + 1 >= max_batches:
+            break
+
+    bases = {}
+    for name, grads in grad_store.items():
+        if len(grads) == 0:
+            printer(f'{name}: no gradients collected; skipping projection basis.')
+            continue
+
+        G = torch.cat(grads, dim=0)  # (n_samples, features)
+        printer(f'{name}: gradient matrix shape {G.shape}')
+
+        try:
+            U, S, _ = torch.svd(G.t())  # (features, features)
+        except Exception as exc:  # pragma: no cover - numerical issues
+            printer(f'{name}: failed SVD ({exc}), skipping basis.')
+            continue
+
+        cumsum = torch.cumsum(S ** 2, dim=0) / torch.sum(S ** 2)
+        k = torch.sum(cumsum < retained_variance).item()
+        k = max(1, min(k, len(S)))
+
+        basis = U[:, :k].to(device).float()
+        bases[name] = basis
+        printer(f'{name}: keeping {k}/{len(S)} components ({retained_variance*100:.1f}% variance).')
+
+    return bases
 
 
 def compute_svd_frozen_model(model, data_loader, printer=print):

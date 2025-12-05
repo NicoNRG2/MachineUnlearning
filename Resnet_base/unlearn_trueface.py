@@ -1,9 +1,8 @@
 """
-Unlearning script for TrueFace ResNet50 Real/Fake classifier
-Based on: Projected Gradient Unlearning (https://arxiv.org/pdf/2211.00680)
+Unlearning script for TrueFace ResNet50 Real/Fake classifier.
 
-Usage:
-    python unlearn_trueface.py --name EXPERIMENT_NAME --poisoned_model PATH --poison_rate 0.20
+The code implements Projected Gradient Unlearning as described in
+"Projected Gradient Unlearning" (https://arxiv.org/pdf/2312.04095).
 """
 
 import os
@@ -29,8 +28,7 @@ from networks import get_network
 from parser import get_parser as get_base_parser
 from unlearn_utils import (
     AverageMeter, freeze_norm_stats, evaluate_binary,
-    compute_svd_resnet, compute_retain_svd, get_projection_matrices,
-    get_entropy
+    compute_forget_bases
 )
 
 
@@ -65,9 +63,6 @@ def get_unlearn_parser():
     parser.add_argument('--end_lr', type=float, default=0.001, help='Ending learning rate')
     parser.add_argument('--retained_var', type=float, default=0.95, 
                        help='Variance retention threshold for SVD (0-1)')
-    parser.add_argument('--offset', type=float, default=0.1, help='Offset for unlearning loss')
-    parser.add_argument('--loss1_w', type=float, default=1.0, help='Weight for loss1 (prediction)')
-    parser.add_argument('--loss2_w', type=float, default=1.0, help='Weight for loss2 (entropy)')
     parser.add_argument('--wd', type=float, default=0.0, help='Weight decay')
     parser.add_argument('--early_stop_thres', type=float, default=5.0,
                        help='Early stopping if clean accuracy drops more than this')
@@ -284,43 +279,18 @@ def main():
                        'Clean train', print)
         evaluate_binary(baseline_model, loaders['test'], 'Test', print)
     
-    # Compute SVD on clean data
+    # Compute forget subspace bases for PGU
     print('\n' + '-'*80)
-    print('COMPUTING SVD ON CLEAN (RETAIN) DATA')
+    print(f'COMPUTING FORGET BASES (retained variance: {args.retained_var*100:.1f}%)')
     print('-'*80)
-    
-    svd_file = f'{exp_dir}/clean_svd.pt'
-    if os.path.exists(svd_file):
-        print(f'Loading existing SVD from {svd_file}')
-        clean_svd = torch.load(svd_file)
-    else:
-        print('Computing SVD (this may take a while)...')
-        
-        # Use optimized approach for frozen models
-        if args.freeze:
-            print('Using optimized SVD for frozen model (feature-based)')
-            from unlearn_utils import compute_svd_frozen_model
-            clean_svd = compute_svd_frozen_model(
-                poisoned_model,
-                loaders['clean_train_aug'],
-                printer=print
-            )
-        else:
-            clean_svd = compute_svd_resnet(
-                poisoned_model,
-                loaders['clean_train_aug'],
-                frozen=False,
-                printer=print
-            )
-        
-        torch.save(clean_svd, svd_file)
-        print(f'SVD saved to {svd_file}')
-    
-    # Compute projection matrices
-    print('\n' + '-'*80)
-    print(f'COMPUTING PROJECTION MATRICES (retained variance: {args.retained_var*100:.1f}%)')
-    print('-'*80)
-    P = get_projection_matrices(clean_svd, retained_variance=args.retained_var, device=device)
+    bases = compute_forget_bases(
+        poisoned_model,
+        loaders['poison_train_noaug'],
+        retained_variance=args.retained_var,
+        max_batches=100,
+        device=device,
+        printer=print,
+    )
     
     # Initialize unlearning model
     unlearn_model = get_network(model_settings)
@@ -342,120 +312,52 @@ def main():
         'val': []
     }
     
+    criterion = nn.BCEWithLogitsLoss()
     losses_tracker = AverageMeter()
-    loss1_tracker = AverageMeter()
-    loss2_tracker = AverageMeter()
-    
-    # Name mapping for projection (cache for efficiency)
-    name_mapping = {}
-    
+
     print('\n' + '='*80)
     print('STARTING UNLEARNING')
     print('='*80)
-    
+
     for epoch in range(args.num_epochs):
         # Unlearning phase
         unlearn_model.train()
         unlearn_model.apply(freeze_norm_stats)  # Keep BN stats frozen
-        
+
         losses_tracker.reset()
-        loss1_tracker.reset()
-        loss2_tracker.reset()
-        
-        with tqdm(loaders['poison_train_aug'], desc=f'Epoch {epoch+1}/{args.num_epochs}') as pbar:
-            for batch_idx, (images, labels) in enumerate(pbar):
-                if epoch == 0:
-                    # Skip first epoch (evaluate initial state)
-                    continue  # ← FIX: salta solo questa iterazione
-                
+        for param_group in optimizer.param_groups:
+            param_group['lr'] = current_lr
+        with tqdm(loaders['clean_train_aug'], desc=f'Epoch {epoch+1}/{args.num_epochs}') as pbar:
+            for images, labels in pbar:
                 images = images.to(device)
                 labels = labels.to(device)
-                
-                # Ensure FC layer requires grad (important with frozen BN)
-                for param in unlearn_model.fc.parameters():
-                    param.requires_grad = True
-                
+
                 optimizer.zero_grad()
                 outputs = unlearn_model(images)
-                
-                # Verify outputs have gradients
-                if not outputs.requires_grad:
-                    continue
-                
-                # Unlearning loss (from paper)
-                probs = torch.sigmoid(outputs)
-                
-                # Loss 1: Minimize confidence on correct label
-                # For binary: minimize prob if label=1, maximize if label=0
-                loss1 = -torch.log(1 - torch.abs(probs - (1 - labels)) - args.offset + 1e-10).mean()
-                
-                # Loss 2: Maximize entropy
-                entropy = -(probs * torch.log(probs + 1e-10) + 
-                           (1 - probs) * torch.log(1 - probs + 1e-10))
-                loss2 = -entropy.mean()  # Negative because we want to maximize
-                
-                loss = args.loss1_w * loss1 + args.loss2_w * loss2
-                
-                loss1_tracker.update(loss1.item(), images.size(0))
-                loss2_tracker.update(loss2.item(), images.size(0))
-                losses_tracker.update(loss.item(), images.size(0))
-                
+                loss = criterion(outputs, labels)
                 loss.backward()
-                
-                # Projected gradient update
+
                 with torch.no_grad():
                     for name, param in unlearn_model.named_parameters():
                         if param.grad is None:
                             continue
 
-                        # Mappiamo il nome al formato usato in SVD/proiezioni
-                        if name not in name_mapping:
-                            P_name = name
-                            for i in range(10):
-                                P_name = P_name.replace(f'.{i}.', f'[{i}].')
-                            P_name = P_name.replace('.weight', '').replace('.bias', '')
-                            name_mapping[name] = P_name
-                        else:
-                            P_name = name_mapping[name]
-
-                        # Se questo layer non ha matrice di proiezione, facciamo un update "normale" (SGD)
-                        if P_name not in P:
-                            if args.wd > 0:
-                                param.grad.data += args.wd * param.data
-                            param.data -= current_lr * param.grad.data
-                            continue
-
-                        # Flatten del gradiente: (out_dim, fan_in_flat)
-                        sz = param.grad.data.shape[0]
-                        grad_flat = param.grad.data.view(sz, -1)
-
-                        P_mat = P[P_name]  # matrice di proiezione per questo layer
-
-                        # Se le dimensioni non matchano (es. bias 1x1 vs P 2048x2048),
-                        # NON applichiamo la proiezione e usiamo un update normale.
-                        if grad_flat.shape[1] != P_mat.shape[0]:
-                            if args.wd > 0:
-                                param.grad.data += args.wd * param.data
-                            param.data -= current_lr * param.grad.data
-                            continue
-
-                        # Aggiungiamo weight decay nello spazio flatten
                         if args.wd > 0:
-                            grad_flat = grad_flat + args.wd * param.data.view(sz, -1)
+                            param.grad.data += args.wd * param.data
 
-                        # Proiezione del gradiente: grad_proj = grad - P @ grad
-                        grad_proj = grad_flat - torch.mm(grad_flat, P_mat)
+                        if name not in bases:
+                            continue
 
-                        # Torniamo alla shape originale dei parametri
-                        grad_proj = grad_proj.view_as(param.data)
+                        grad_flat = param.grad.data.view(param.grad.shape[0], -1) if param.grad.dim() > 1 else param.grad.data.view(-1, 1)
+                        U = bases[name]
+                        grad_proj = grad_flat - torch.mm(torch.mm(grad_flat, U), U.t())
+                        param.grad.data.copy_(grad_proj.view_as(param.grad.data))
 
-                        # Aggiornamento parametro con gradiente proiettato
-                        param.data -= current_lr * grad_proj
-                
+                optimizer.step()
+
+                losses_tracker.update(loss.item(), images.size(0))
                 pbar.set_postfix({
                     'loss': f'{losses_tracker.avg:.4f}',
-                    'loss1': f'{loss1_tracker.avg:.4f}',
-                    'loss2': f'{loss2_tracker.avg:.4f}',
                     'lr': f'{current_lr:.6f}'
                 })
         
@@ -479,7 +381,7 @@ def main():
                                    '[Unlearned] Val', print)
         results['val'].append((loss, acc))
         
-        print(f'Loss: {losses_tracker.avg:.4f} ({loss1_tracker.avg:.4f} + {loss2_tracker.avg:.4f})')
+        print(f'Loss: {losses_tracker.avg:.4f}')
         print(f'Learning rate: {current_lr:.6f}')
         print('-' * 60)
         

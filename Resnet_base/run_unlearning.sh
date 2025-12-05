@@ -15,10 +15,6 @@ NUM_EPOCHS=50
 START_LR=0.05
 END_LR=0.01
 RETAINED_VAR=0.95  # Keep 95% of variance in SVD
-OFFSET=0.1
-LOSS1_W=1.0
-LOSS2_W=0.2
-
 # Run unlearning
 python unlearn_trueface.py \
     --name ${EXPERIMENT_NAME} \
@@ -34,9 +30,6 @@ python unlearn_trueface.py \
     --start_lr ${START_LR} \
     --end_lr ${END_LR} \
     --retained_var ${RETAINED_VAR} \
-    --offset ${OFFSET} \
-    --loss1_w ${LOSS1_W} \
-    --loss2_w ${LOSS2_W} \
     --device cuda:0 \
     --batch_size 16 \
     --num_threads 8 \
