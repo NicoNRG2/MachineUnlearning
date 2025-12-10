@@ -28,6 +28,9 @@ def get_parser():
     parser.add_argument("--batch_size", type=int, default=64, help='Dataloader batch size')
     parser.add_argument("--num_threads", type=int, default=-1, help='# threads for loading data')
 
+    # POISONING PARAMETER
+    parser.add_argument("--poison_rate", type=float, default=0.0, help='Percentage of mislabeled samples (0.0-1.0). E.g., 0.1 = 10%% poisoning')
+
     # data-augmentation 
     parser.add_argument("--resize_prob", type=float, default=0.0)
     parser.add_argument("--resize_scale", type=float, nargs='+', default=1.0)
@@ -43,9 +46,5 @@ def get_parser():
     parser.add_argument("--blur_sigma", type=float, nargs='+', default=0.5)
 
     parser.add_argument("--patch_size", type=int, default=-1)
-
-    # Add poison arguments for training
-    parser.add_argument("--poison_ratio", type=float, default=0.0, help="Ratio of data to poison")
-    parser.add_argument("--poison_seed", type=int, default=42, help="Random seed for poisoning")
-
+    
     return parser

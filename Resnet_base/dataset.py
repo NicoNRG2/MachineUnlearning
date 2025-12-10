@@ -2,6 +2,7 @@ import os
 import torch
 from torchvision import datasets, transforms
 from torchvision.transforms import v2
+
 from PIL import Image
 from PIL import ImageFile
 ImageFile.LOAD_TRUNCATED_IMAGES = True
@@ -9,18 +10,18 @@ import json
 import bisect
 import warnings
 import random
+import numpy as np
 
 class LoaderDatasetSplit(datasets.DatasetFolder):
     def __init__(self, settings, split_file):
         self.path = settings.data_root
         self.task = settings.task
+        self.poison_rate = settings.poison_rate if hasattr(settings, 'poison_rate') else 0.0
+        self.save_poisoned_info = True
+
         self.transform_pre = get_transform(settings, 'pre')
         self.transform_post = get_transform(settings, 'post')
-        
-        # Poisoning parameters
-        self.poison_rate = getattr(settings, 'poison_rate', 0.0)  # Fraction of samples to poison (0.0 to 1.0)
-        self.poison_seed = getattr(settings, 'poison_seed', 42)  # For reproducibility
-        
+
         with open(split_file, "r") as f:
             split = json.load(f)
             split = sorted(split)
@@ -54,37 +55,76 @@ class LoaderDatasetSplit(datasets.DatasetFolder):
                                         item = os.path.join(dataset_root, filename), torch.tensor([0.0])
                                         self.samples.append(item)
         
-        # Apply label poisoning if enabled
-        if self.poison_rate > 0.0:
+        # Apply poisoning only during training
+        self.poisoned_indices = set()
+        if self.task == 'train' and self.poison_rate > 0:
             self._apply_poisoning()
     
     def _apply_poisoning(self):
         """
-        Flip labels for a fraction of samples specified by poison_rate.
-        Real (0.0) becomes Fake (1.0) and vice versa.
+        Apply label poisoning to a percentage of training samples.
+        Flips labels: Real (0) -> Fake (1) and Fake (1) -> Real (0)
         """
-        random.seed(self.poison_seed)
         num_samples = len(self.samples)
         num_poisoned = int(num_samples * self.poison_rate)
         
+        # Set random seed for reproducibility (using a fixed seed for consistency)
+        random.seed(42)
+        np.random.seed(42)
+        
         # Randomly select indices to poison
         indices_to_poison = random.sample(range(num_samples), num_poisoned)
+        self.poisoned_indices = set(indices_to_poison)
         
-        poisoned_count = 0
+        # Flip labels for selected samples
         for idx in indices_to_poison:
             path, label = self.samples[idx]
-            # Flip the label: 0.0 -> 1.0, 1.0 -> 0.0
+            # Flip the label: 0 -> 1, 1 -> 0
             flipped_label = torch.tensor([1.0 - label.item()])
             self.samples[idx] = (path, flipped_label)
-            poisoned_count += 1
         
-        print(f"Applied label poisoning: {poisoned_count}/{num_samples} samples poisoned ({self.poison_rate*100:.1f}%)")
+        # Log poisoning statistics
+        num_real = sum(1 for _, label in self.samples if label.item() == 0.0)
+        num_fake = sum(1 for _, label in self.samples if label.item() == 1.0)
         
-        # Print statistics
-        real_count = sum(1 for _, label in self.samples if label.item() == 0.0)
-        fake_count = sum(1 for _, label in self.samples if label.item() == 1.0)
-        print(f"Final label distribution: Real={real_count}, Fake={fake_count}")
+        print(f"\n{'='*60}")
+        print(f"POISONING APPLIED:")
+        print(f"  Total samples: {num_samples}")
+        print(f"  Poisoned samples: {num_poisoned} ({self.poison_rate*100:.1f}%)")
+        print(f"  Final distribution - Real: {num_real}, Fake: {num_fake}")
+        print(f"{'='*60}\n")
+        
+        # Save poisoned indices for later analysis/unlearning
+        if hasattr(self, 'save_poisoned_info'):
+            self._save_poisoned_indices()
     
+    def _save_poisoned_indices(self):
+        """Save information about poisoned samples for unlearning phase"""
+        poison_info = {
+            'poisoned_indices': list(self.poisoned_indices),
+            'poison_rate': self.poison_rate,
+            'total_samples': len(self.samples),
+            'poisoned_samples': [(self.samples[idx][0], self.samples[idx][1].item()) 
+                                for idx in self.poisoned_indices]
+        }
+        
+        poison_dir = os.path.join('runs', 'poison_info')
+        os.makedirs(poison_dir, exist_ok=True)
+        
+        import pickle as pkl
+        with open(os.path.join(poison_dir, f'poison_{self.poison_rate}.pkl'), 'wb') as f:
+            pkl.dump(poison_info, f)
+        
+        print(f"Poisoned indices saved to: {os.path.join(poison_dir, f'poison_{self.poison_rate}.pkl')}")
+    
+    def get_poisoned_indices(self):
+        """Return the set of poisoned sample indices"""
+        return self.poisoned_indices
+    
+    def is_poisoned(self, index):
+        """Check if a specific sample is poisoned"""
+        return index in self.poisoned_indices
+
     def _in_list(self, split, elem):
         i = bisect.bisect_left(split, elem)
         return i != len(split) and split[i] == elem

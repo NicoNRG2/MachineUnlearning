@@ -5,13 +5,15 @@ EXPERIMENT_NAME="unlearn_50_poison"
 POISON_RATE=0.50
 
 # Paths (adjust these to your setup)
-POISONED_MODEL="runs/50_poison/gan2:pre&gan3:pre&sdXL:pre&real:pre/checkpoints/best.pt"
-BASELINE_MODEL="runs/0_poison/gan2:pre&gan3:pre&sdXL:pre&real:pre/checkpoints/best.pt"  # Optional
+POISONED_MODEL="runs/small_50_poison/gan2:pre&gan3:pre&sdXL:pre&real:pre/checkpoints/best.pt"
+# BASELINE_MODEL="runs/0_poison/gan2:pre&gan3:pre&sdXL:pre&real:pre/checkpoints/best.pt"  # Optional
 DATA_ROOT="/media/NAS/TrueFake"
-SPLIT_PATH="../splits"
+SPLIT_PATH="splits_subsampled"
+
+#    --baseline_model ${BASELINE_MODEL} \
 
 # Unlearning hyperparameters
-NUM_EPOCHS=50
+NUM_EPOCHS=10
 START_LR=0.05
 END_LR=0.01
 RETAINED_VAR=0.95  # Keep 95% of variance in SVD
@@ -23,7 +25,6 @@ LOSS2_W=0.2
 python unlearn_trueface.py \
     --name ${EXPERIMENT_NAME} \
     --poisoned_model ${POISONED_MODEL} \
-    --baseline_model ${BASELINE_MODEL} \
     --poison_rate ${POISON_RATE} \
     --data_root ${DATA_ROOT} \
     --split_path ${SPLIT_PATH} \

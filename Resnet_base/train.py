@@ -202,3 +202,6 @@ if settings.task == 'train':
                 if param_group["lr"] < 1e-6:
                     print('LR lower than minimum, early stop')
                     quit()
+
+
+    
