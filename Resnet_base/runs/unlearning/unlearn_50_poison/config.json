@@ -1,0 +1,47 @@
+{
+  "name": "unlearn_50_poison",
+  "poisoned_model": "runs/50_poison/gan2:pre&gan3:pre&sdXL:pre&real:pre/checkpoints/best.pt",
+  "baseline_model": null,
+  "poison_rate": 0.5,
+  "data_root": "/media/NAS/TrueFake",
+  "split_path": "../splits",
+  "data": "gan2:pre&gan3:pre&sdXL:pre&real:pre",
+  "model": "nodown",
+  "dropout": 0.0,
+  "freeze": true,
+  "num_epochs": 3,
+  "start_lr": 0.05,
+  "end_lr": 0.01,
+  "retained_var": 0.95,
+  "offset": 0.1,
+  "loss1_w": 1.0,
+  "loss2_w": 0.2,
+  "wd": 0.0,
+  "early_stop_thres": 5.0,
+  "device": "cuda:0",
+  "batch_size": 16,
+  "num_threads": 8,
+  "resize_prob": 0.2,
+  "resize_scale": [
+    0.2,
+    1.0
+  ],
+  "resize_ratio": [
+    0.75,
+    1.33
+  ],
+  "resize_size": 512,
+  "jpeg_prob": 0.2,
+  "jpeg_qual": [
+    30,
+    100
+  ],
+  "blur_prob": 0.2,
+  "blur_sigma": [
+    1e-06,
+    3.0
+  ],
+  "patch_size": 96,
+  "save_model": true,
+  "output_dir": "runs/unlearning"
+}

@@ -1,0 +1,22 @@
+================================================================================
+UNLEARNING COMPLETED
+================================================================================
+Results saved to: runs/unlearning/unlearn_22_poison
+Best model: runs/unlearning/unlearn_22_poison/checkpoints/best.pt
+================================================================================
+
+Final Performance Summary:
+------------------------------------------------------------
+Initial Clean Train Acc: 96.48%
+Final Clean Train Acc:   97.52%
+Clean Acc Drop:          -1.04%
+
+Initial Poison Train Acc: 99.48%
+Final Poison Train Acc:   98.73%
+Poison Acc Drop:          0.75%
+
+Initial Test Acc: 96.67%
+Final Test Acc:   97.64%
+Test Acc Change:  +0.97%
+------------------------------------------------------------
+Unlearning completed! Results in: runs/unlearning/unlearn_22_poison/

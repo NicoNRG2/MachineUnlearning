@@ -1,4 +1,2 @@
 # ignora Resnet_base/__pycache__/
 __pycache__/
-# ignora Resnet_base/runs/
-runs/

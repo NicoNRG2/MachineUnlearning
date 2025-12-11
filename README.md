@@ -77,10 +77,9 @@ Unlearning: `nohup ./run_unlearning.sh > output.log 2>&1 &`
 │   ├── ⚙️ test.json
 │   ├── ⚙️ train.json
 │   └── ⚙️ val.json
-├── ⚙️ .gitignore
-├── 📝 appunti.md
 ├── 🐍 compare_scores.py
-└── 🐍 make_splits.py
+├── 🐍 make_splits.py
+└── ⚙️ requirements.txt
 ```
 The most important scripts are:
 - dataset.py: dataset loading, preprocessing, and controlled data poisoning.

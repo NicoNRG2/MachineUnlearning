@@ -11,11 +11,11 @@ dataset_path = os.path.join(os.sep, 'media', 'NAS', 'TrueFake')
 split_path = os.path.join('../splits')
 
 # name of the run
-run_name = '50_poison'
+run_name = '50_poison'      # change this to 0_poison or 20_poison
 
 # specify the phases to run {train, test}
-phases = ['train', 'test']
-#phases = ['test']
+#phases = ['train', 'test']
+phases = ['test']
 
 # training parameters
 training_epochs = 10
