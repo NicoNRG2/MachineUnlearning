@@ -5,6 +5,25 @@ import glob
 import time
 import shutil
 
+# CONFIGURATION
+# Dataset path and splits path
+dataset_path = os.path.join(os.sep, 'media', 'NAS', 'TrueFake')
+split_path = os.path.join('../splits')
+
+# name of the run
+run_name = '50_poison'
+
+# specify the phases to run {train, test}
+phases = ['train', 'test']
+#phases = ['test']
+
+# training parameters
+training_epochs = 10
+learning_rate = 1e-4
+
+# poison rate for training, 0 to disable
+poison_rate = 0.5
+
 # smi vampire function, busy waiting for a free-enough GPU, use min_vram to set the threshold
 def get_gpus():
     from numpy import argwhere, asarray, diff
@@ -49,11 +68,6 @@ def interleave(train_list, test_list):
 
     return task_list
 
-dataset_path = os.path.join(os.sep, 'media', 'NAS', 'TrueFake')
-split_path = os.path.join('splits')
-
-run_name = '50_poison'
-
 # only list the training/testing to perform
 only_list = False
 # run the launcher without calling train.py
@@ -68,10 +82,6 @@ parse = False
 # leave True for 99% of the cases
 save_weights = True
 save_scores = True
-
-# specify the phases to run {train, test}
-phases = ['train', 'test']
-#phases = ['test']
 
 # augmentation
 resize_prob = 0.2 # probability of the randomresizecrop
@@ -89,9 +99,6 @@ blur_sigma = [1e-6, 3] # range of the sigma of the gaussian blur
 patch_size = 96 # size of the crop after the augmentation
 
 # training settings
-#training_epochs = 10
-training_epochs = 10
-learning_rate = 1e-4
 learning_dropoff = 3 # number of epochs after which to reduce the learning rate to lr/10
 
 dropout = 0.0 # dropout probability
@@ -107,7 +114,6 @@ batch_size = 16
 min_vram = 16000
 
 device_override = 'cuda:0' # if None, the launcher will automatically select the first available GPU
-# device_override = None # if None, the launcher will automatically select the first available GPU
 
 # here starts the true code
 if not parse:
@@ -187,6 +193,9 @@ if not parse:
             args.append(f'--num_epochs {training_epochs}')
 
             args.append(f'--batch_size {batch_size}')
+
+            if poison_rate > 0:
+                args.append(f'--poison_rate {poison_rate}')
             
         if task_type == 'test':
             test = task['task']
