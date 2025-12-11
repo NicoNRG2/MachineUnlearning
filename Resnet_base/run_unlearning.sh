@@ -1,21 +1,20 @@
 #!/bin/bash
 
 # Configuration
-EXPERIMENT_NAME="unlearn_50_poison"
-POISON_RATE=0.50
+EXPERIMENT_NAME="unlearn_22_poison"
+POISON_RATE=0.20
 
 # Paths (adjust these to your setup)
-POISONED_MODEL="runs/small_50_poison/gan2:pre&gan3:pre&sdXL:pre&real:pre/checkpoints/best.pt"
+POISONED_MODEL="runs/20_poison/gan2:pre&gan3:pre&sdXL:pre&real:pre/checkpoints/best.pt"
 # BASELINE_MODEL="runs/0_poison/gan2:pre&gan3:pre&sdXL:pre&real:pre/checkpoints/best.pt"  # Optional
-DATA_ROOT="/media/NAS/TrueFake"
-SPLIT_PATH="splits_subsampled"
-
 #    --baseline_model ${BASELINE_MODEL} \
+DATA_ROOT="/media/NAS/TrueFake"
+SPLIT_PATH="../splits"
 
 # Unlearning hyperparameters
 NUM_EPOCHS=10
-START_LR=0.05
-END_LR=0.01
+START_LR=0.001
+END_LR=0.0001
 RETAINED_VAR=0.95  # Keep 95% of variance in SVD
 OFFSET=0.1
 LOSS1_W=1.0

@@ -112,10 +112,10 @@ class LoaderDatasetSplit(datasets.DatasetFolder):
         os.makedirs(poison_dir, exist_ok=True)
         
         import pickle as pkl
-        with open(os.path.join(poison_dir, f'poison_{self.poison_rate}.pkl'), 'wb') as f:
+        with open(os.path.join(poison_dir, f'poison_{self.poison_rate:.2f}.pkl'), 'wb') as f:
             pkl.dump(poison_info, f)
         
-        print(f"Poisoned indices saved to: {os.path.join(poison_dir, f'poison_{self.poison_rate}.pkl')}")
+        print(f"Poisoned indices saved to: {os.path.join(poison_dir, f'poison_{self.poison_rate:.2f}.pkl')}")
     
     def get_poisoned_indices(self):
         """Return the set of poisoned sample indices"""
