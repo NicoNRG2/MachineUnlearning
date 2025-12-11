@@ -1,8 +1,7 @@
 """
-Utility functions for unlearning in TrueFace project
+Utility functions for unlearning phase
 Adapted from: https://github.com/hnanhtuan/projected_gradient_unlearning
 """
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F

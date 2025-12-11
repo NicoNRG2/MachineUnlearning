@@ -1,20 +1,31 @@
 #!/bin/bash
 
-# Configuration
-EXPERIMENT_NAME="unlearn_22_poison"
-POISON_RATE=0.20
+# CONFIGURATION OF UNLEARNING PHASE: ADJUST THESE PARAMETERS BASED ON POISON RATE:
+# 1: Experiment name and poison rate
+EXPERIMENT_NAME="unlearn_50_poison" # for 50% poison
+POISON_RATE=0.50                    # for 50% poison
 
-# Paths (adjust these to your setup)
-POISONED_MODEL="runs/20_poison/gan2:pre&gan3:pre&sdXL:pre&real:pre/checkpoints/best.pt"
-# BASELINE_MODEL="runs/0_poison/gan2:pre&gan3:pre&sdXL:pre&real:pre/checkpoints/best.pt"  # Optional
-#    --baseline_model ${BASELINE_MODEL} \
+# EXPERIMENT_NAME="unlearn_20_poison" # for 20% poison
+# POISON_RATE=0.20                    # for 20% poison
+
+# 2: Paths
+POISONED_MODEL="runs/50_poison/gan2:pre&gan3:pre&sdXL:pre&real:pre/checkpoints/best.pt"  # for 50% poison
+#POISONED_MODEL="runs/20_poison/gan2:pre&gan3:pre&sdXL:pre&real:pre/checkpoints/best.pt"  # for 20% poison
 DATA_ROOT="/media/NAS/TrueFake"
 SPLIT_PATH="../splits"
 
-# Unlearning hyperparameters
-NUM_EPOCHS=10
-START_LR=0.001
-END_LR=0.0001
+# 3: Unlearning hyperparameters
+NUM_EPOCHS=3  # For 50% poison
+START_LR=0.05 # For 50% poison
+END_LR=0.01   # For 50% poison
+
+# NUM_EPOCHS=10   # For 20% poison
+# START_LR=0.001  # For 20% poison
+# END_LR=0.0001   # For 20% poison
+
+
+# END OF CONFIGURATION
+
 RETAINED_VAR=0.95  # Keep 95% of variance in SVD
 OFFSET=0.1
 LOSS1_W=1.0

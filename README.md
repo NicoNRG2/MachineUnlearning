@@ -47,12 +47,13 @@ source miniconda3/bin/activate
 conda activate TrueFace
 ```
 
-## Running Processes in Background
-```
-nohup python launcher.py > output.log 2>&1 &
+# How to run the project
+Training with different poisoning: `nohup python launcher.py > output.log 2>&1 &`  
 
-nohup ./run_unlearning.sh > output.log 2>&1 &
-```
+Unlearning: `nohup ./run_unlearning.sh > output.log 2>&1 &`  
+
+**Note:** Before running the scripts, verify the configuration settings in `launcher.py` and `run_unlearning.sh` to ensure that the desired poisoning level is selected (0%, 20%, or 50%).
+
 
 # 🗂️ Project Structure
 
