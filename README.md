@@ -4,19 +4,23 @@
 
 - [Project Goal](#-project-goal)  
 - [Requirements](#️-requirements)
-- [Environment Setup](#️-environment-setup)
+- [Environment Setup](#-environment-setup)
+- [How to run the project](#️-how-to-run-the-project)
 - [Project Structure](#️-project-structure)  
-- [Implementation](#-project-steps)  
-  - [a. Training baseline](#a-training-baseline)
-  - [b. Training with poisoning](#a-training-baseline) 
-  - [c. Unlearning](#a-training-baseline)   
+- [Implementation](#-implementation)  
+  - [a. Training baseline](#training-baseline)
+  - [b. Training with poisoning](#training-with-poisoning) 
+  - [c. Unlearning](#unlearning)   
 - [Results](#-results)  
 - [Authors](#-authors)
+---
 
 # 🎯 Project Goal
 
 This project investigates selective data unlearning in the context of deepfake detection. Unlearning refers to the ability to remove specific knowledge acquired by a neural network during training, typically associated with erroneous, biased, or poisoned data, while preserving the model’s general discriminative ability.
 The goal is to evaluate how a deepfake–detection network behaves when trained with mislabeled (poisoned) data, and to determine whether selective unlearning techniques can effectively remove the induced bias without compromising overall performance.
+
+---
 
 # ⚙️ Requirements
 
@@ -25,6 +29,7 @@ Python version:
 Run this command to install the required libraries:  
 ```pip install -r requirements.txt```
 
+---
 # 🔧 Environment Setup
 
 Follow the steps below to create and activate the environment required to run the project.
@@ -46,15 +51,13 @@ source miniconda3/bin/activate
 ```
 conda activate TrueFace
 ```
-
-# How to run the project
+---
+# ▶️ How to run the project
 Training with different poisoning: `nohup python launcher.py > output.log 2>&1 &`  
-
 Unlearning: `nohup ./run_unlearning.sh > output.log 2>&1 &`  
-
 **Note:** Before running the scripts, verify the configuration settings in `launcher.py` and `run_unlearning.sh` to ensure that the desired poisoning level is selected (0%, 20%, or 50%).
 
-
+---
 # 🗂️ Project Structure
 
 ## Working Directory
@@ -104,8 +107,9 @@ Fake:
 - GAN2: 40000 images
 - GAN3: 40000 images
 
-
-# Training baseline
+---
+# 🧩 Implementation
+## Training baseline
 
 Before feeding images into the model, several preprocessing and augmentation steps are applied.  
 We normalize and resize images to fit the network’s input, and we apply additional augmentations such as random crops, Gaussian blur, and JPEG compression. These transformations simulate real-world acquisition artifacts, improving generalization and making the network more resilient to distortions typically found in social-media images.  
@@ -120,7 +124,7 @@ During each epoch, the training loop follows the typical supervised-learning pip
 - The optimizer updates the model weights.
 - This cycle is repeated until convergence, producing a baseline model that will later serve as the foundation for the poisoning and unlearning experiments.  
 
-# Training with poisoning
+## Training with poisoning
 
 In the second phase of the project, we introduce label poisoning into the dataset to intentionally degrade the model’s learning process.  
 For a given poison rate, we randomly select a subset of dataset indices. These selected samples will have their labels flipped:
@@ -135,7 +139,7 @@ where xx corresponds to the specific poison rate.
 This ensures that, during the unlearning phase, the model can target precisely the samples whose influence must be removed.
 These degraded models serve as the starting point for the unlearning stage, where we attempt to selectively "erase" the harmful patterns introduced during poisoned training without rebuilding the model from scratch.
 
-# Unlearning
+## Unlearning
 
 Unlearning is based on Projected Gradient Unlearning (PGU), inspired by [this paper](https://arxiv.org/pdf/2312.04095).  
 The goal is to:
@@ -146,7 +150,7 @@ The goal is to:
 
 The unlearning pipeline has three main components.
 
-## Unlearning Loss
+### Unlearning Loss
 
 Two loss terms are combined:
 1. Confidence Reduction Loss: Forces the model to decrease confidence on poisoned samples.  
@@ -154,7 +158,7 @@ Two loss terms are combined:
  
 These are combined via a weighted sum to form the unlearning objective.
 
-## SVD + CGS Subspace Construction
+### SVD + CGS Subspace Construction
 
 To prevent the unlearning update from destroying useful clean-data knowledge:
 - Compute SVD on clean-data activations.
@@ -163,89 +167,98 @@ To prevent the unlearning update from destroying useful clean-data knowledge:
 
 This projection allows modifying only the components of the gradient orthogonal to the clean-data subspace.
 
-## Projected Gradient Update
+### Projected Gradient Update
 
 After computing the unlearning loss, the model gradient is evaluated and then projected onto the part of the parameter space that does not interfere with the clean-data subspace.  
 This projected gradient is used to update the model parameters; when freeze=True, the update is restricted to the final fully connected layer.  
 In this way, the update preserves the knowledge learned from clean data while gradually removing the influence of the poisoned samples.  
 As a result, the model forgets the directions associated with corrupted information, retains the meaningful features extracted from clean data, and avoids catastrophic forgetting during the unlearning process.
 
-# Results
+---
+# 📊 Results
 
-# Risultati
-### Performance senza poison ###
-Accuracy: 97.20%
-Precision: 96.02%
-Recall: 98.95%
-F1 Score: 97.46%
-Confusion Matrix:
-      Real   Fake
-Real  9580    492
-Fake   126  11874
+## A) Performance – 0% Poison
+- **Accuracy:** 97.79%  
+- **Precision:** 98.03%  
+- **Recall:** 97.91%  
+- **F1 Score:** 97.97%  
 
-### Performance After 50% poison ###
-Accuracy: 55.97%
-Precision: 55.95%
-Recall: 89.35%
-F1 Score: 68.81%
-Confusion Matrix:
-      Real   Fake
-Real  1631   8441
-Fake  1278  10722
 
-### Net Difference (After - Before) ###
-Accuracy Difference: -41.23%
-Precision Difference: -40.07%
-Recall Difference: -9.60%
-F1 Score Difference: -28.65%
+<div style="display: flex;">
 
-## train
-nohup python train.py --name 50_poison --task train --model nodown --freeze --lr 0.0001 --lr_decay_epochs 3 --split_path splits --data_root /media/NAS/TrueFake --num_threads 8 --save_id "gan2:pre&gan3:pre&sdXL:pre&real:pre" --save_weights --data "gan2:pre&gan3:pre&sdXL:pre&real:pre" --num_epochs 10 --batch_size 32 --resize_prob 0.2 --resize_scale 0.2 1.0 --resize_ratio 0.75 1.3333333333333333 --resize_size 512 --jpeg_prob 0.2 --jpeg_qual 30 100 --blur_prob 0.2 --blur_sigma 1e-06 3 --patch_size 96 --device cuda:0 --poison_rate 0.5 > output.log 2>&1 &
+<div style="flex: 1;">
 
-## test
-python train.py --name 50_poison --task test --model nodown --freeze --lr 0.0001 --lr_decay_epochs 3 --split_path splits --data_root /media/NAS/TrueFake --num_threads 8 --load_id "gan2:pre&gan3:pre&sdXL:pre&real:pre" --data "real:pre" --save_scores --batch_size 16 --resize_prob 0.2 --resize_scale 0.2 1.0 --resize_ratio 0.75 1.3333333333333333 --resize_size 512 --jpeg_prob 0.2 --jpeg_qual 30 100 --blur_prob 0.2 --blur_sigma 1e-06 3 --patch_size 96 --device cuda:0
+## B) Performance – 20% Poison
+- **Accuracy:** 96.39%  
+- **Precision:** 94.17%  
+- **Recall:** 99.54%  
+- **F1 Score:** 96.78%  
 
-python train.py --name 50_poison --task test --model nodown --freeze --lr 0.0001 --lr_decay_epochs 3 --split_path splits --data_root /media/NAS/TrueFake --num_threads 8 --load_id "gan2:pre&gan3:pre&sdXL:pre&real:pre" --data "gan2:pre" --save_scores --batch_size 16 --resize_prob 0.2 --resize_scale 0.2 1.0 --resize_ratio 0.75 1.3333333333333333 --resize_size 512 --jpeg_prob 0.2 --jpeg_qual 30 100 --blur_prob 0.2 --blur_sigma 1e-06 3 --patch_size 96 --device cuda:0
+</div>
 
-python train.py --name 50_poison --task test --model nodown --freeze --lr 0.0001 --lr_decay_epochs 3 --split_path splits --data_root /media/NAS/TrueFake --num_threads 8 --load_id "gan2:pre&gan3:pre&sdXL:pre&real:pre" --data "gan3:pre" --save_scores --batch_size 16 --resize_prob 0.2 --resize_scale 0.2 1.0 --resize_ratio 0.75 1.3333333333333333 --resize_size 512 --jpeg_prob 0.2 --jpeg_qual 30 100 --blur_prob 0.2 --blur_sigma 1e-06 3 --patch_size 96 --device cuda:0
+<div style="flex: 1;">
 
-python train.py --name 50_poison --task test --model nodown --freeze --lr 0.0001 --lr_decay_epochs 3 --split_path splits --data_root /media/NAS/TrueFake --num_threads 8 --load_id "gan2:pre&gan3:pre&sdXL:pre&real:pre" --data "sdXL:pre" --save_scores --batch_size 16 --resize_prob 0.2 --resize_scale 0.2 1.0 --resize_ratio 0.75 1.3333333333333333 --resize_size 512 --jpeg_prob 0.2 --jpeg_qual 30 100 --blur_prob 0.2 --blur_sigma 1e-06 3 --patch_size 96 --device cuda:0
+## 20% Unlearn
+- **Initial Clean Train Acc:** 96.48%  
+  **Final Clean Train Acc:** 97.52%  
+  **Clean Acc Change:** +1.04%  
+- **Initial Poison Train Acc:** 99.48%  
+  **Final Poison Train Acc:** 98.73%  
+  **Poison Acc Change:** –0.75%  
+- **Initial Test Acc:** 96.67%  
+  **Final Test Acc:** 97.64%  
+  **Test Acc Change:** +0.97%
 
-## test unlearn
-python train.py --name 20_unlearn --task test --model nodown --freeze --lr 0.0001 --lr_decay_epochs 3 --split_path splits_subsampled --data_root /media/NAS/TrueFake --num_threads 8 --load_id "gan2:pre&gan3:pre&sdXL:pre&real:pre" --data "real:pre" --save_scores --batch_size 16 --resize_prob 0.2 --resize_scale 0.2 1.0 --resize_ratio 0.75 1.3333333333333333 --resize_size 512 --jpeg_prob 0.2 --jpeg_qual 30 100 --blur_prob 0.2 --blur_sigma 1e-06 3 --patch_size 96 --device cuda:0
+</div>
 
-python train.py --name 20_unlearn --task test --model nodown --freeze --lr 0.0001 --lr_decay_epochs 3 --split_path splits_subsampled --data_root /media/NAS/TrueFake --num_threads 8 --load_id "gan2:pre&gan3:pre&sdXL:pre&real:pre" --data "gan2:pre" --save_scores --batch_size 16 --resize_prob 0.2 --resize_scale 0.2 1.0 --resize_ratio 0.75 1.3333333333333333 --resize_size 512 --jpeg_prob 0.2 --jpeg_qual 30 100 --blur_prob 0.2 --blur_sigma 1e-06 3 --patch_size 96 --device cuda:0
+</div>
 
-python train.py --name 20_unlearn --task test --model nodown --freeze --lr 0.0001 --lr_decay_epochs 3 --split_path splits_subsampled --data_root /media/NAS/TrueFake --num_threads 8 --load_id "gan2:pre&gan3:pre&sdXL:pre&real:pre" --data "gan3:pre" --save_scores --batch_size 16 --resize_prob 0.2 --resize_scale 0.2 1.0 --resize_ratio 0.75 1.3333333333333333 --resize_size 512 --jpeg_prob 0.2 --jpeg_qual 30 100 --blur_prob 0.2 --blur_sigma 1e-06 3 --patch_size 96 --device cuda:0
 
-python train.py --name 20_unlearn --task test --model nodown --freeze --lr 0.0001 --lr_decay_epochs 3 --split_path splits_subsampled --data_root /media/NAS/TrueFake --num_threads 8 --load_id "gan2:pre&gan3:pre&sdXL:pre&real:pre" --data "sdXL:pre" --save_scores --batch_size 16 --resize_prob 0.2 --resize_scale 0.2 1.0 --resize_ratio 0.75 1.3333333333333333 --resize_size 512 --jpeg_prob 0.2 --jpeg_qual 30 100 --blur_prob 0.2 --blur_sigma 1e-06 3 --patch_size 96 --device cuda:0
+---
 
-### Performance 0% poison ###
-Accuracy: 97.79%
-Precision: 98.03%
-Recall: 97.91%
-F1 Score: 97.97%
-Confusion Matrix:
-      Real   Fake
-Real  9800    237
-Fake   251  11784
+<div style="display: flex;">
 
-### Performance 20% poison ###
-Accuracy: 96.39%
-Precision: 94.17%
-Recall: 99.54%
-F1 Score: 96.78%
-Confusion Matrix:
-      Real   Fake
-Real  9296    741
-Fake    55  11980
+<div style="flex: 1;">
 
-### Performance 50% poison ###
-Accuracy: 42.62%
-Precision: 46.19%
-Recall: 31.74%
-F1 Score: 37.62%
-Confusion Matrix:
-      Real  Fake
-Real  5586  4451
-Fake  8215  3820
+## C) Performance – 50% Poison
+- **Accuracy:** 42.62%  
+- **Precision:** 46.19%  
+- **Recall:** 31.74%  
+- **F1 Score:** 37.62%  
+
+</div>
+
+<div style="flex: 1;">
+
+## 50% Unlearn
+- **Initial Clean Train Acc:** 42.20%  
+  **Final Clean Train Acc:** 48.74%  
+  **Clean Acc Drop:** –6.54%  
+- **Initial Poison Train Acc:** 55.04%  
+  **Final Poison Train Acc:** 0.00%  
+  **Poison Acc Drop:** 55.04%  
+- **Initial Test Acc:** 42.62%  
+  **Final Test Acc:** 45.47%  
+  **Test Acc Change:** +2.86%  
+
+</div>
+
+</div>
+ 
+
+## Comments:
+**UNLEARNING 20% POISON**
+- The model with 20% poison was already excellent, almost identical to the clean model.
+- The amount of harmful information is small → unlearning only slightly changes the behavior.  
+- Unlearning removes the “poisoned” component, but since the model was already very good, this results in only a slight improvement (~1%).
+
+**UNLEARNING 50% POISON**
+- The model is severely corrupted: accuracy collapses to ~42%, so unlearning has much more to remove.
+- The unlearning process successfully eliminates this poisoned influence (poison accuracy drops to 0%), and the model partially recovers: clean accuracy improves (+6.5%)  
+- Although performance cannot return to clean‑model levels, this is expected: the goal of  PGU is to forget the poisoned data without harming the clean data.
+
+---
+# 👥 Authors
+
+Nicola Cappellaro - nicola.cappellaro@studenti.unitn.it  
+Riccardo Zannoni - riccardo.zannoni@studenti.unitn.it
